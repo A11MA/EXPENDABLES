@@ -1,0 +1,130 @@
+/* header pagrindiniai nustatymai */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #014E56;;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* nav pagrindiniai nustatymai */
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 40px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* nav home ir about atsumas */
+  .nav_meniu {
+    display: flex;
+    gap: 40px; /* atstumas tarp home ir about */
+  }
+  
+  /* Šrifto Livvic importavimas */
+  @import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Livvic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    transition: color 0.3s ease; /* laikas per kiek keisti spalva*/
+  }
+  
+  /* keičia spalva kada naveda kursoriu */
+  header nav a:hover {
+    color: #f67e7e;
+  }
+  
+  /* skirta tiems kas naudoja tik klaviatura be pelės */
+  header nav a:focus {
+    outline: 2px solid #f67e7e;
+  }
+  
+  /* mygtuko dizajnas */
+  header .contact-btn {
+    margin: 2px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    color: #fff;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /*laikas per kiek keisti spalva*/
+    width: 153px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+  
+  header .contact-btn:hover {
+    background-color: #fff;
+    color: #033c3d;
+  }
+  
+  /* nav logo */
+  .nav_logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 250px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  
+  /* Стиль кнопки гамбургера */
+  .menu-toggle {
+    display: none; /* по умолчанию скрыта */
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  
+    /* burger iš dešinies */
+    margin-left: auto; 
+  }
+  
+  /* mob */
+  @media (max-width: 768px) {
+      .contact-btn {
+      display: none; /* naikinamas mygtukas "contact us"*/
+    }
+    .nav_meniu.active .contact-btn {
+      display: block; /* при активном меню можем показать кнопку */
+    }
+  
+    .nav_meniu {
+      display: none; /* скрыто по умолчанию */
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+      background-color: #033c3d; /* более подходящий фон */
+      padding: 20px;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      border-radius: 8px;
+    }
+  
+    /* rodomas mygtukas "burger" */
+    .menu-toggle {
+      display: block;
+    }
+  
+    /* rodomas meniu paspaudus ant "burgerio" */
+    .nav_meniu.active {
+      display: flex;
+    }
+  }
+  
