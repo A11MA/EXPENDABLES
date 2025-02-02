@@ -24,8 +24,8 @@ div {
     margin-left: 10.3125rem;
     margin-top: 12.375rem;
     padding: 0;
-    height: 144px;
-    width: 445px;
+    height: 9rem;
+    width: 27.813rem;
     position: relative; 
     float: left;
     /* border: 1px solid blue; */
@@ -34,15 +34,16 @@ div {
 .ar1-left-h2::before { /* juostele prie h2 teksto*/
     content: '';
     position: absolute;
-    top: -58px; /* atstumas i virsu nuo "build" zodzio*/
+    top: -3.625rem; /* atstumas i virsu nuo "build" zodzio*/
     left: 0;
-    width: 50px;
-    height: 4px; 
+    width: 3.125rem;
+    height: 0.25rem; 
     background-color: var(--light-coral);
 }
 
 .ar1-right-container {/*konteineris desines puses elementams*/
     margin-top: 12.375rem;
+    padding-left: 0.625rem;
     float: right;
     width: 50%;
     height: 100%;
@@ -70,14 +71,14 @@ div {
 
 .text-content { /* h3 ir p teksto nustatymai*/
     display: flex;
-    width: 445px;
-    height: 94px;
+    width: 27.813rem;
+    height: 5.875rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
     flex-shrink: 0;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .home-article-1 h3 {
@@ -89,7 +90,7 @@ div {
     opacity: 0.8;
  }
 
- /* ------------------ article 2 sekcija -----------------------*/
+/* ------------------ article 2 sekcija -----------------------*/
 .home-article-2 {
     margin: 0 auto;
     background-color: var(--deep-jungle-green); 
@@ -165,6 +166,8 @@ div {
     top: 0;
     left: 0;
 }
+
+
 
 /* Add media query for smaller screens */
 @media screen and (max-width: 1240px) {
