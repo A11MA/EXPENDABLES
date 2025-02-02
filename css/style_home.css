@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+
+}
+
+div {
+    font-family: 'Livvic', sans-serif;
+}
+
+.home-article-1 {
+    margin: 0;
+    background-color: var(--sacramento-state-green); 
+    width: 100%;
+    min-height: 42.75rem;
+    position: relative;   /* reikalingas background icon'ui */
+}
+
+.ar1-left-h2 {
+    margin-left: 10.3125rem;
+    margin-top: 12.375rem;
+    padding: 0;
+    height: 9rem;
+    width: 27.813rem;
+    position: relative; 
+    float: left;
+    /* border: 1px solid blue; */
+}
+
+.ar1-left-h2::before { /* juostele prie h2 teksto*/
+    content: '';
+    position: absolute;
+    top: -3.625rem; /* atstumas i virsu nuo "build" zodzio*/
+    left: 0;
+    width: 3.125rem;
+    height: 0.25rem; 
+    background-color: var(--light-coral);
+}
+
+.ar1-right-container {/*konteineris desines puses elementams*/
+    margin-top: 12.375rem;
+    padding-left: 0.625rem;
+    float: right;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.ar1-right-div {  
+    display: flex;  /* nuotrauka salia teksto*/
+    gap: 1.4375rem; /* tarpelis tarp icon ir text*/
+    /* border: 1px solid green; */
+}
+
+.ar1-icon {
+    width: 4.5rem;  /* 72px */
+    height: 4.5rem;    
+    /* border: 1px solid yellow; */
+    
+}
+
+.ar1-background-decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.text-content { /* h3 ir p teksto nustatymai*/
+    display: flex;
+    width: 27.813rem;
+    height: 5.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+}
+
+.home-article-1 h3 {
+    color: var(--light-coral);
+}
+
+.ar1-parahraph-style {
+    /* border: 1px solid red; */
+    opacity: 0.8;
+ }
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 1240px) {
+
+
+    .ar1-right-div {
+        justify-content: center;
+    }
+
+    
+    .ar1-left-container,
+    .ar1-right-container{
+        padding-top: 4rem;
+        float: none;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .ar1-right-div {
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+    
+
+}
