@@ -1,0 +1,61 @@
+:root {
+    /* Primary Colors */
+    --midnight-green: #014E56;
+    --light-coral: #F67E7E;
+    --white: #FFFFFF;
+    
+    /* Secondary Colors */
+    --rapture-blue: #79C8C7;
+    --police-blue: #2C6269;
+    --deep-jungle-green: #004047;
+    --sacramento-state-green: #012F34;
+    --dark-green: #002529;
+}
+
+
+/* typography */
+
+/* headings */
+.h1-large-font {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px; 
+    font-family: 'Livvic', sans-serif;
+}
+
+.h1-small-font {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px; /*line-height neatitinka dokumentacijoje esancio 56px line */
+    font-family: 'Livvic', sans-serif;
+}
+
+.h2-font {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px; 
+    font-family: 'Livvic', sans-serif;
+}
+
+.h3-font {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px; 
+    font-family: 'Livvic', sans-serif;
+}
+
+/* body */
+
+.body1-font {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px; 
+    font-family: 'Livvic', sans-serif;
+}
+
+.body2-font {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px; 
+    font-family: 'Livvic', sans-serif;
+}

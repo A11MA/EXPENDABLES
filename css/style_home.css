@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--white);
 
 }
 
@@ -12,60 +13,47 @@ div {
 }
 
 .home-article-1 {
-    margin: 0 auto;
-    background-color: #012F34; /*Sacramento State Green*/
+    margin: 0;
+    background-color: var(--sacramento-state-green); 
     width: 100%;
     min-height: 42.75rem;
-    font-size: 6.25rem;
-    line-height: 6.25rem;
-    overflow: hidden;  
     position: relative;   /* reikalingas background icon'ui */
 }
 
-.ar1-left-container { /*kaires puses conteiner*/
-    float: left;
-    /* border: 1px solid red; */
-    padding-left: 10.3125rem;
-    padding-top: 12.375rem;
-    margin: 0;
-}
-
 .ar1-left-h2 {
-    height: 144px;
-    width: 445px;
-    color: white; 
-    font-size: 48px; 
-    line-height: 48px; 
+    margin-left: 10.3125rem;
+    margin-top: 12.375rem;
+    padding: 0;
+    height: 9rem;
+    width: 27.813rem;
     position: relative; 
+    float: left;
     /* border: 1px solid blue; */
 }
 
 .ar1-left-h2::before { /* juostele prie h2 teksto*/
     content: '';
     position: absolute;
-    top: -53px; /* atstumas i virsu nuo "build" zodzio*/
+    top: -3.625rem; /* atstumas i virsu nuo "build" zodzio*/
     left: 0;
-    width: 50px;
-    height: 4px; 
-    background-color: #F67E7E; /* Same color as previous border */
+    width: 3.125rem;
+    height: 0.25rem; 
+    background-color: var(--light-coral);
 }
 
-.ar1-right-container {
+.ar1-right-container {/*konteineris desines puses elementams*/
+    margin-top: 12.375rem;
+    padding-left: 0.625rem;
     float: right;
     width: 50%;
     height: 100%;
-    padding-top: 12.375rem; 
+    /* border: 1px solid red; */
 }
 
-.ar1-right-div {
-    color: white; 
-    font-size: 1.25rem;   /* 20px */
-    width: 80%;
-    display: flex;  
-    align-items: flex-start;
-    gap: 1.4375rem;      /* tarpelis tarp icon ir text*/
+.ar1-right-div {  
+    display: flex;  /* nuotrauka salia teksto*/
+    gap: 1.4375rem; /* tarpelis tarp icon ir text*/
     /* border: 1px solid green; */
-    position: static;
 }
 
 .ar1-icon {
@@ -81,52 +69,43 @@ div {
     right: 0;
 }
 
-.ar1-span {
-    width: 445px; 
-    color: #F67E7E; /*Light Coral*/
-    font-size: 18px; 
-    line-height: 28px; 
-    display: block; /* atskyrimas nuo likusio teksto*/
-    margin-bottom: 16px;
+.text-content { /* h3 ir p teksto nustatymai*/
+    display: flex;
+    width: 27.813rem;
+    height: 5.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+}
 
+.home-article-1 h3 {
+    color: var(--light-coral);
 }
 
 .ar1-parahraph-style {
-    margin-bottom: 32px;
-    font-style: normal;
-    width: 445px; 
-    opacity: 0.80; 
-    font-size: 15px; 
-    font-weight: 600; 
-    line-height: 25px; 
-    word-wrap: break-word;
     /* border: 1px solid red; */
+    opacity: 0.8;
  }
 
 /* Add media query for smaller screens */
 @media screen and (max-width: 1240px) {
 
 
-    .ar1-left-container,
-    .ar1-right-container {
-        float: none;
-        width: 100%;
-        /* border: 1px solid red; */
-
-    }
-
-    .ar1-left-container {
-      
-        padding-top: 8.5rem;
-        padding-left: 6.13rem;
-        margin: 0;
-    }
-
-    .ar1-right-container{
-        padding-top: 4rem;
+    .ar1-right-div {
+        justify-content: center;
     }
 
     
+    .ar1-left-container,
+    .ar1-right-container{
+        padding-top: 4rem;
+        float: none;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
     .ar1-right-div {
         width: 100%;
@@ -135,14 +114,5 @@ div {
         /* border: 1px solid red; */
     }
     
-    .ar1-left-h2 {
-        height: 144px;
-        width: 27.81rem;
-        color: white; 
-        font-size: 2rem; 
-        line-height: 2rem; 
-        position: relative; 
-        /* border: 1px solid blue; */
-    }
 
 }
