@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section.ourClients {
+    position: relative;
+    width: 100%;
+    background-color: hsl(186, 96%, 10%);
+    color: white;
+    font-family: "Livvic", serif;
+}
+
+
+.ourClients .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ourClients .logo img {
+    width: 100%;
+}
+
+.ourClients .flex-container {
+    padding: 140px 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ourClients .flex-container h2 {
+    width: 100%;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+
+    margin-bottom: 74px;
+}
+
+.ourClients .flex-container ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    width: 1110px;
+    height: 45px;
+}
+
+.ourClients .flex-container li {
+    flex: 1;
+}
+
+.ourClients .flex-container li img {
+    width: 80%;
+    max-height: 45px;
+}
