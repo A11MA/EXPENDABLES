@@ -99,6 +99,85 @@ div {
   opacity: 0.8;
 }
 
+/* ------------------ article 2 sekcija -----------------------*/
+.home-article-2 {
+    margin: 0 auto;
+    background-color: var(--deep-jungle-green); 
+    width: 100%;
+    min-height: 46.56rem;
+    overflow: hidden;  
+    position: relative;   /* reikalingas background icon'ui */
+    display: flex;
+    flex-direction: column;    /* Stack children vertically */
+    align-items: center;       /* Center children horizontally */
+    padding-top: 8.75rem;
+}
+
+.ar2-h2 {
+    height: 6rem;
+    width: 58.25rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.ar2-span {
+    color: var(--rapture-blue);
+}
+
+.ar2-cards-container {
+    display: flex;
+    gap: 1.88rem;
+    margin-top: 3.5rem;
+}
+
+.ar2-card {
+    width: 21.87rem;
+    text-align: center;
+}
+
+.ar2-quote-mark {
+    width: 4.1875rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    margin-bottom: -1.5rem;
+}
+
+.ar2-parahraph-style{
+    margin-bottom: 1.5rem;
+}
+
+.ar2-last-name{
+    color: var(--rapture-blue);
+}
+
+.ar2-title { /* tokio srifto nera pre-defined */
+    font-size: 0.8125rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.125rem; /* 138.462% */
+}
+
+.ar2-avatar {
+    margin-top: 2.69rem;
+    width: 3.87rem;
+    height: 3.88rem;
+
+}
+
+.ar2-circle-bg-decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ar2-square-bg-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
 /* Add media query for smaller screens */
 @media screen and (max-width: 1240px) {
   .ar1-right-div {
