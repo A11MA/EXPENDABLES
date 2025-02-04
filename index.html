@@ -3,31 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/style_home.css" />
-    <link rel="stylesheet" href="css/style_meniu.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style_meniu.css" />
   </head>
   <body>
     <header>
-      <!-- Logo -->
+      <!-- header nav bar is kaires logo -->
       <div class="nav_logo">
-        <img src="images/header_logo.svg" alt="header_logo" width="160" height="40" />
+        <img src="../images/nav-icon.svg" alt="header_logo" />
       </div>
-      <!-- meniu -->
-      <nav>
-        <div class="nav_meniu">
-          <a href="index.html">Home</a>
-          <a href="pages/about.html">About</a>
-        </div>
-        <!-- mygtukas Contact Us -->
-        <a href="pages/contact.html">
-          <button class="contact-btn" aria-label="contact us">Contact Us</button>
-        </a>
-        <!-- mygtukas gamburger -->
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-      </nav>
-    </header>
 
-    <script src="js/nav_bar.js"></script>
+      <!-- header nav bar -->
+      <div class="desktop-menu">
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="../pages/about.html">about</a></li>
+        </ul>
+      </div>
+      <!-- mygtukas contact us -->
+      <div class="contact-btn-meniu">
+        <a href="../pages/contact.html" class="contact-us">contact us</a>
+      </div>
+      <!-- ikona mobiliam irenginiuj  -->
+      <div class="menu-icon" onclick="toggleMenu()" aria-label="Open menu">☰</div>
+    </header>
+    <!-- meniu mobiliam irenginiuj -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <span class="close-btn" onclick="toggleMenu()" aria-label="Close menu">✖</span>
+      </div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li>
+          <a href="../pages/contact.html" class="contact-btn">Contact us</a>
+        </li>
+      </ul>
+      <img src="../images/mobile-icon.svg" alt="Mobile icon" />
+    </nav>
+
+    <!-- JS script pajungimas  !!! turi buti body apacoj -->
+    <script src="../JS/nav_bar.js"></script>
   </body>
 </html>
