@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,11 @@
 }
 
 body {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
-    text-align: center;
+    color: #FFF;
+    font-family: "Livvic", serif;
+    width: 1440px;
 }
 
 main > header > section::before {
@@ -23,9 +27,6 @@ a {
     text-decoration: none;
 }
 
-main > header > nav > ul {
-    list-style-type: none;
-}
 
 .pstn--abs {
     position: absolute;
@@ -39,43 +40,83 @@ main > header > nav > ul {
     margin: 83px 986px 406px 405px;
 }
 
+.pstn--home2 {
+    margin: 65px 681px 7px 0;
+}
+
 .pstn--about {
     margin: 83px 895px 406px 494px;
 }
 
-.pstn--btn {
-    margin: 82px 198px 407px 1154px;
+.pstn--about2 {
+    margin: 65px 590px 7px 89px;
 }
 
-.pstn--sctn {
+.pstn--btn {
+    margin: 73px 165px 396px 1122px;
+}
+
+.pstn--btn2 {
+    margin: 76px 260px 76px 1027px;
+}
+
+.pstn--section {
     margin: 241px 165px 120px 545px;
 }
 
-.pstn--h3 {
+.pstn--About {
     margin: 241px 925px 176px 165px;
 }
 
 .pstn--donut {
-    margin: 416px 100px 0 620px;
+    margin: 317px 100px 0 1340px;
 }
 
-.transform {
-    transform: translateY(-50%);
+.pstn--rdy-to-get-strtd {
+    margin: 76px 673px 76px 263px;
+}
+
+.pstn--design-elmnt {
+    margin: 56px 1240px 100px 0;
+}
+
+.pstn--section-footer {
+    margin: 48px 165px 48px 165px;
+}
+
+.pstn--p-footer {
+    margin: 75px 0 0 855px;
+}
+
+.pstn--icons {
+    margin: 0 0 76px 1006px;
+}
+
+.pstn--div {
+    margin: 0 380px 0 285px;
+}
+
+.pstn--logo2 {
+    margin: 0 570px 60px 0;
 }
 
 
 
-
-.font--Livvic {
-    font-family: "Livvic", sans-serif;
-}
 
 .font-style--normal {
     font-style: normal;
 }
 
+.font-size--15px {
+    font-size: 15px;
+}
+
 .font-size--18px {
     font-size: 18px;
+}
+
+.font-size--48px {
+    font-size: 48px;
 }
 
 .font-size--64px {
@@ -109,6 +150,10 @@ main > header > nav > ul {
     width: 100px;
 }
 
+.width--104px {
+    width: 104px;
+}
+
 .width--153px {
     width: 153px;
 }
@@ -117,16 +162,39 @@ main > header > nav > ul {
     width: 160px;
 }
 
+.width--244px {
+    width: 244px;
+}
+
+.width--255px {
+    width: 255px;
+}
+
 .width--350px {
     width: 350px;
+}
+
+.width--445px {
+    width: 445px;
 }
 
 .width--730px {
     width: 730px;
 }
 
+.width--1110px {
+    width: 1110px;
+}
 
 
+
+.height--24px {
+    height: 24px;
+}
+
+.height--25px {
+    height: 25px;
+}
 
 .height--28px {
     height: 28px;
@@ -156,6 +224,10 @@ main > header > nav > ul {
     height: 156px;
 }
 
+.height--196px {
+    height: 196px;
+}
+
 .height--200px {
     height: 200px;
 }
@@ -165,9 +237,16 @@ main > header > nav > ul {
 }
 
 
+.line-height--25px {
+    line-height: 25px;
+}
 
 .line-height--28px {
     line-height: 28px;
+}
+
+.line-height--48px {
+    line-height: 48px;
 }
 
 .line-height--100px {
@@ -176,9 +255,6 @@ main > header > nav > ul {
 
 
 
-.place-itm--center {
-    place-items: center;
-}
 
 .jstf-cntnt--center {
     justify-content: center;
@@ -208,20 +284,38 @@ main > header > nav > ul {
     text-align: left;
 }
 
+.text-align--right {
+    text-align: right;
+}
+
 .flex-shrink--0 {
     flex-shrink: 0;
 }
 
 
 
-
+.bckgrnd-color--inherit {
+    background-color: inherit;
+}
 
 .bckgrnd-clr--014E56 {
     background-color: #014E56;
 }
 
+.bckgrnd-color--F67E7E {
+    background-color: #F67E7E;
+}
+
+.bckgrnd-color--002529 {
+    background-color: #002529;
+}
+
 .color--FFF {
     color: #FFF;
+}
+
+.color--012F34 {
+    color: #012F34;
 }
 
 
@@ -238,11 +332,92 @@ main > header > nav > ul {
 
 
 
-.btn-brdr {
-    border-radius: 24px;
+.btn-border {
     border: 2px solid #FFF;
+}
+
+.btn-border2 {
+    border: 2px solid #012F34;
 }
 
 .border {
     border: 1px solid black;
+}
+
+.border-radius--24px {
+    border-radius: 24px;
+}
+
+
+.opacity--06 {
+    opacity: 0.6;
+}
+
+.overflow--hidden {
+    overflow: hidden;
+}
+
+
+
+
+/* our clients main stiles */
+section.ourClients {
+    position: relative;
+    background-color: hsl(186, 96%, 10%);
+    color: white;
+    font-family: "Livvic", serif;
+}
+
+/* logo size and position */
+.ourClients .flex-container {
+    padding: 140px 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+/* our clients size and position */
+.ourClients .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ourClients .logo img {
+    width: 100%;
+}
+
+/* clients main title */
+.ourClients .flex-container h2 {
+    width: 100%;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+
+    margin-bottom: 74px;
+}
+
+/* clients img position and size */
+.ourClients .flex-container ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    width: 1110px;
+    height: 45px;
+}
+
+.ourClients .flex-container li {
+    flex: 1;
+}
+
+.ourClients .flex-container li img {
+    width: 80%;
+    max-height: 45px;
 }
