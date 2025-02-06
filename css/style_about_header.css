@@ -11,12 +11,12 @@
 header {
   display: flex;
   background-color: #014e56;
-  /* justify-content: space-between; */
+  width: 100%;
+  
+  
 }
 
-
-
-/* *************************************************************   1.  Desktop meniu pozicionavimas      **************************************************************** */ 
+/* *************************************************************   1.  Desktop meniu pozicionavimas      **************************************************************** */
 
 /* nav logo is pozicionavimas */
 .nav_logo {
@@ -34,8 +34,8 @@ header {
 /*  home , about ir contact us  pozicionavimas */
 .desktop-menu {
   display: flex;
-  margin-right:40px;
-  margin-top: 80px;/*atstumas nuo virsaus  80px */
+  margin-right: 40px;
+  margin-top: 80px; /*atstumas nuo virsaus  80px */
 }
 
 /* meniu  naikinam ul dekoracija  */
@@ -56,12 +56,10 @@ header {
 
 /* mygtukas header meniu pozicionavimas */
 .contact-btn-meniu {
-margin-top: 76px;/*atstumas nuo virsaus  76px */
-margin-left: auto;
-margin-right:166px; /* Устанавливает отступ справа */
+  margin-top: 76px; /*atstumas nuo virsaus  76px */
+  margin-left: auto;
+  margin-right: 166px; /* Устанавливает отступ справа */
 }
-
-
 
 /* **********************************************************  2.  Desktop meniu  stiliai ir funkcinolumas    ************************************************************************* */
 
@@ -80,7 +78,7 @@ margin-right:166px; /* Устанавливает отступ справа */
 }
 
 /* mygtuko  stilius "contact us"  header  */
-.contact-us{
+.contact-us {
   text-decoration: none;
   margin: 2px;
   padding: 10px 20px;
@@ -90,7 +88,7 @@ margin-right:166px; /* Устанавливает отступ справа */
   background: none;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s; 
+  transition: background-color 0.3s, color 0.3s;
   width: 153px;
   height: 48px;
   flex-shrink: 0;
@@ -113,18 +111,17 @@ margin-right:166px; /* Устанавливает отступ справа */
   background: none;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s; 
+  transition: background-color 0.3s, color 0.3s;
   width: 153px;
   height: 48px;
   flex-shrink: 0;
-} 
+}
 
- /* mygtuko  "contact us"  mob meniu  spalvos keitimas */
+/* mygtuko  "contact us"  mob meniu  spalvos keitimas */
 .contact-btn:hover {
   background-color: #fff;
   color: #033c3d;
 }
-
 
 /* mob meniu BURGER ikona  */
 .menu-icon {
@@ -135,11 +132,6 @@ margin-right:166px; /* Устанавливает отступ справа */
   margin-top: 70px;
   margin-left: 331px;
 }
-
-
-
-
-
 
 /* mobilus meniu  */
 
@@ -188,22 +180,15 @@ margin-right:166px; /* Устанавливает отступ справа */
 
 
 
-
-
-
-
-
-
 /* **********************************************************  3. Media mob,  pozicionavimas visi elementai ************************** */
 /* media mob */
 @media (max-width: 768px) {
-  
-  
-  
+
+
+
   .contact-btn-meniu {
     display: none;
   }
-
 
   .desktop-menu {
     display: none;
@@ -213,9 +198,5 @@ margin-right:166px; /* Устанавливает отступ справа */
     display: block;
   }
 }
-
-
-
-
 
 /* ********************************************************  4. Media tablet,  pozicionavimas visi elementa ******************************  */
