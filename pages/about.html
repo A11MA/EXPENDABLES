@@ -1,182 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style_about.cc">
-    <link rel="stylesheet" href="../css/style_meniu.css" />
-    <link rel="stylesheet" href="../css/korteles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style_about.css">
+  <link rel="stylesheet" href="../css/style_meniu.css" />
+  <link rel="stylesheet" href="../css/styles_about_ourClients.css">
+  <link rel="stylesheet" href="../css/korteles.css">
 </head>
+
 <body>
-    <header>
-        <div class="nav_logo">
-          <img src="../images/header_logo.svg "alt="logo" width="160" height="40" />
-        </div>
-        <nav>
-          <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
-          <div class="nav_meniu">
-            <a href="../index.html">Home</a>
-            <a href="../pages/about.html">About</a>
+<header>
+  <div class="nav_logo">
+      <img src="../images/header_logo.svg" alt="logo" width="160" height="40" />
+  </div>
+  <nav>
+      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      <div class="nav_meniu">
+          <a href="../index.html">Home</a>
+          <a href="../pages/about.html">About</a>
+      </div>
+
+      <a href="../pages/contact.html">
+          <button class="contact-btn" aria-label="contact us">Contact Us</button>
+      </a>
+  </nav>
+</header>
+<section class="directors-section">
+  <h1>Meet the Directors</h1>
+  <div class="directors-grid">
+      <!-- korteles -->
+      <div class="director-card" tabindex="0">
+          <div class="card-front">  <!-- kpriekine dalys -->
+              <img src="../images/korteliu_foto/Oval.jpg" alt="Nikita Marks" class="director-image">
+              <h3>Nikita Marks</h3>
+              <p class="role">Founder & CEO</p>
+              <button class="flip-button" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
+                  </svg>
+              </button>
           </div>
-  
-          <a href="../pages/contact.html">
-              <button class="contact-btn" aria-label="contact us">Contact Us</button>
-            </a>
-            
-        </nav>
-      </header>
-      <script src="../JS/nav_bar.js"></script>
-      <section class="directors-section">
-        <h1>Meet the Directors</h1>
-        <div class="directors-grid">
-            <!-- korteles -->
-            <div class="director-card" tabindex="0">
-                <div class="card-front">  <!-- kpriekine dalys -->
-                    <img src="../images/korteliu_foto/Oval.jpg" alt="Nikita Marks" class="director-image">
-                    <h3>Nikita Marks</h3>
-                    <p class="role">Founder & CEO</p>
-                    <button class="flip-button" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="card-back">  <!-- nugarine dalis -->
-                    <h3>Nikita Marks</h3>  <!-- korteles -->
-                    <p class="bio">Some additional information about Nikita.</p>
-                    <button class="flip-button flip-back" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="director-card" tabindex="0">
-                <div class="card-front">
-                    <img src="../images/korteliu_foto/Oval (1).jpg" alt="Cristian Duncan" class="director-image">
-                    <h3>Cristian Duncan</h3>
-                    <p class="role">Co-founder & COO </p>
-                    <button class="flip-button" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="card-back">
-                    <h3>Cristian Duncan</h3>
-                    <p class="bio">Some additional information about Nikita.</p>
-                    <button class="flip-button flip-back" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="director-card" tabindex="0">
-                <div class="card-front">
-                    <img src="../images/korteliu_foto/Oval (2).jpg" alt="Cruz Hamer" class="director-image">
-                    <h3>Cruz Hamer</h3>
-                    <p class="role">Co-founder & CTO </p>
-                    <button class="flip-button" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="card-back">
-                    <h3>Cruz Hamer</h3>
-                    <p class="bio">Some additional information about Nikita.</p>
-                    <button class="flip-button flip-back" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="director-card" tabindex="0">
-                <div class="card-front">
-                    <img src="../images/korteliu_foto/Oval (3).jpg" alt="Drake Heaton" class="director-image">
-                    <h3>Drake Heaton</h3>
-                    <p class="role">Business Development</p>
-                    <button class="flip-button" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="card-back">
-                    <h3>Drake Heaton</h3>
-                    <p class="bio">Some additional information about Nikita.</p>
-                    <button class="flip-button flip-back" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="director-card" tabindex="0">
-                <div class="card-front">
-                    <img src="../images/korteliu_foto/Oval (4).jpg" alt="Griffin Wise" class="director-image">
-                    <h3>Griffin Wise</h3>
-                    <p class="role">Lead Marketing</p>
-                    <button class="flip-button" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="card-back">
-                    <h3>Griffin Wise</h3>
-                    <p class="bio">Some additional information about Nikita.</p>
-                    <button class="flip-button flip-back" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="director-card" tabindex="0">
-                <div class="card-front">
-                    <img src="../images/korteliu_foto/OVA_LAST.jpg" alt="Aden Allan" class="director-image">
-                    <h3>Aden Allan</h3>
-                    <p class="role">Founder & CEO</p>
-                    <button class="flip-button" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="card-back">
-                    <h3>Aden Allan</h3>
-                    <p class="bio">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
-                    <button class="flip-button flip-back" onclick="flipCard(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-      function flipCard(button) {
-          // apvertimo funkcija
-          const card = button.closest('.director-card');
-          card.classList.toggle('flip');
-      }
-  </script>
+          <div class="card-back">  <!-- nugarine dalis -->
+              <h3>Nikita Marks</h3>  <!-- korteles -->
+              <p class="bio">Some additional information about Nikita.</p>
+              <button class="flip-button flip-back" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+      </div>
+      <div class="director-card" tabindex="0">
+          <div class="card-front">
+              <img src="../images/korteliu_foto/Oval (1).jpg" alt="Cristian Duncan" class="director-image">
+              <h3>Cristian Duncan</h3>
+              <p class="role">Co-founder & COO </p>
+              <button class="flip-button" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+          <div class="card-back">
+              <h3>Cristian Duncan</h3>
+              <p class="bio">Some additional information about Nikita.</p>
+              <button class="flip-button flip-back" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+      </div>
+      <div class="director-card" tabindex="0">
+          <div class="card-front">
+              <img src="../images/korteliu_foto/Oval (2).jpg" alt="Cruz Hamer" class="director-image">
+              <h3>Cruz Hamer</h3>
+              <p class="role">Co-founder & CTO </p>
+              <button class="flip-button" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+          <div class="card-back">
+              <h3>Cruz Hamer</h3>
+              <p class="bio">Some additional information about Nikita.</p>
+              <button class="flip-button flip-back" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+      </div>
+      <div class="director-card" tabindex="0">
+          <div class="card-front">
+              <img src="../images/korteliu_foto/Oval (3).jpg" alt="Drake Heaton" class="director-image">
+              <h3>Drake Heaton</h3>
+              <p class="role">Business Development</p>
+              <button class="flip-button" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+          <div class="card-back">
+              <h3>Drake Heaton</h3>
+              <p class="bio">Some additional information about Nikita.</p>
+              <button class="flip-button flip-back" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+      </div>
+      <div class="director-card" tabindex="0">
+          <div class="card-front">
+              <img src="../images/korteliu_foto/Oval (4).jpg" alt="Griffin Wise" class="director-image">
+              <h3>Griffin Wise</h3>
+              <p class="role">Lead Marketing</p>
+              <button class="flip-button" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+          <div class="card-back">
+              <h3>Griffin Wise</h3>
+              <p class="bio">Some additional information about Nikita.</p>
+              <button class="flip-button flip-back" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+      </div>
+      <div class="director-card" tabindex="0">
+          <div class="card-front">
+              <img src="../images/korteliu_foto/OVA_LAST.jpg" alt="Aden Allan" class="director-image">
+              <h3>Aden Allan</h3>
+              <p class="role">Founder & CEO</p>
+              <button class="flip-button" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#F67E7E"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+          <div class="card-back">
+              <h3>Aden Allan</h3>
+              <p class="bio">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+              <button class="flip-button flip-back" onclick="flipCard(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+                      <circle cx="28" cy="28" r="28" fill="#79C8C7"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0711 23.7573L32.2426 20.9289L28 25.1716L23.7574 20.9289L20.9289 23.7573L25.1716 28L20.9289 32.2426L23.7574 35.0711L28 30.8284L32.2426 35.0711L35.0711 32.2426L30.8284 28L35.0711 23.7573Z" fill="#012F34"/>
+                  </svg>
+              </button>
+          </div>
+      </div>
+  </div>
+</section>
+<script>
+function flipCard(button) {
+    // apvertimo funkcija
+    const card = button.closest('.director-card');
+    card.classList.toggle('flip');
+}
+</script>
+  <!-- clients section -->
+  <section class="ourClients">
+
+    <div class="flex-container">
+      <!-- main logo  -->
+      <div class="logo">
+        <img src="/images/aboutPage_OurClients/bg-pattern-about-4.svg">
+      </div>
+      <!-- title -->
+      <h2>Our Clients</h2>
+      <!-- Clients box, 5 images -->
+      <ul>
+        <li><img src="../images/aboutPage_OurClients/logo-the-verge.png" alt="theVergeClientLogo"></li>
+        <li><img src="../images/aboutPage_OurClients/logo-jakarta-post.png" alt="theJakartaPostClientLogo"></li>
+        <li><img src="../images/aboutPage_OurClients/logo-the-guardian.png" alt="theGuardianClientLogo"></li>
+        <li><img src="../images/aboutPage_OurClients/logo-tech-radar.png" alt="theTechradarClientLogo"></li>
+        <li><img src="../images/aboutPage_OurClients/logo-gadgets-now.png" alt="theGadgetsNowClientLogo"></li>
+      </ul>
+    </div>
+
+
+
+  </section>
+
+  <script src="../JS/nav_bar.js"></script>
+
 </body>
+
 </html>
