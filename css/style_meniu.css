@@ -95,36 +95,45 @@ header {
   }
   
   /* mob */
-  @media (max-width: 768px) {
-      .contact-btn {
-      display: none; /* naikinamas mygtukas "contact us"*/
-    }
-    .nav_meniu.active .contact-btn {
-      display: block; /* при активном меню можем показать кнопку */
-    }
-  
-    .nav_meniu {
-      display: none; /* скрыто по умолчанию */
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 10px;
-      background-color: #033c3d; /* более подходящий фон */
-      padding: 20px;
-      position: absolute;
-      top: 80px;
-      right: 0;
-      width: 200px;
-      border-radius: 8px;
-    }
-  
-    /* rodomas mygtukas "burger" */
-    .menu-toggle {
-      display: block;
-    }
-  
-    /* rodomas meniu paspaudus ant "burgerio" */
-    .nav_meniu.active {
-      display: flex;
-    }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #06484e;
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 1000;
   }
   
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .mobile-menu ul li {
+    margin: 20px 0;
+  }
+  
+  .mobile-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .mobile-menu ul li a:hover {
+    color: #f67e7e;
+  }
+  
+  /* X mygtukas */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+  }

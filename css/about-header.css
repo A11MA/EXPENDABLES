@@ -1,0 +1,48 @@
+.about-section {
+  display: flex;
+  background-color: #014e56;
+}
+
+.about-section h1 {
+  flex-shrink: 0;
+  margin-left: 165px; /*atstumas is kaires 165px */
+  margin-top: 124px; /*atstumas nuo myteam */
+  color: #fff;
+  font-family: Livvic;
+  font-size: 64px;
+  font-style: normal;
+  width: 700;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex-shrink: 0;
+  margin-left: 230px; /* отступ слева */
+  margin-top: 120px; /* отступ сверху */
+  color: #fff;
+  font-family: Livvic;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  width: 730px; /* ограничение ширины */
+  height: 112px; /* максимальная высота  */
+}
+
+.red-line-about-header {
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E; 
+}
+
+.heder-about-img{
+width: 200px;
+height: 200px;
+flex-shrink: 0;
+margin-left: auto; /* Отправляем картинку вправо */
+margin-bottom: 0px; /* Прижимаем к нижнему краю */
+margin-top: 100px;
+margin-right: -100px
+}
+
