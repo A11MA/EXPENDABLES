@@ -7,14 +7,13 @@
 }
 
 body {
-    width: 100%;
-    margin: 0 auto;
     color: #FFF;
     font-family: "Livvic", serif;
     width: 1440px;
+    margin: 0 auto;
 }
 
-main > header > section::before {
+header > section::before {
     content: "";
     display: block;
     width: 50px;
@@ -27,248 +26,157 @@ a {
     text-decoration: none;
 }
 
+.position-logo {
+    top: 77px; 
+    right: 1115px;
+    bottom: 400px;
+    left: 165px;
+}
 
-.pstn--abs {
+.position-logo2 {
+    top: 0px;
+    right: 570px;
+    bottom: 60px;
+    left: 0px;
+}
+
+.position-home {
+    top: 83px;
+    right: 986px;
+    bottom: 406px;
+    left: 405px;
+}
+
+.position-home2 {
+    top: 65px;
+    right: 681px;
+    bottom: 7px;
+    left: 0px;
+}
+
+.position-about {
+    top: 83px;
+    right: 895px;
+    bottom: 406px;
+    left: 494px;
+}
+
+.position-about2 {
+    top: 65px;
+    right: 590px;
+    bottom: 7px;
+    left: 89px;
+}
+
+.position-button {
+    top: 73px;
+    right: 165px;
+    bottom: 396px;
+    left: 1122px;
+}
+
+.position-button2 {
+    top: 76px;
+    right: 260px;
+    bottom: 76px;
+    left: 1027px;
+}
+
+.position-h2 {
+    top: 140px;
+    right: 260px;
+    bottom: 249px;
+    left: 260px;
+}
+
+.position-h3 {
+    top: 241px;
+    right: 925px;
+    bottom: 176px;
+    left: 165px;
+}
+
+.position-h4 {
+    top: 76px;
+    right: 673px;
+    bottom: 76px;
+    left: 263px;
+}
+
+.position-donut {
+    top:317px;
+    right: 100px;
+    bottom: 0px;
+    left: 1340px;
+}
+
+.position-design-element {
+    top: 56px;
+    right: 1240px;
+    bottom: 100px;
+    left: 0px;
+}
+
+.position-design-element2 {
+    top: 0px;
+    right: 1240px;
+    bottom:237px;
+    left: 0px;
+}
+
+.position-section2 {
+    top: 241px;
+    right: 165px;
+    bottom: 120px;
+    right: 545px;
+}
+
+.position-div {
+    top: 48px;
+    right: 165px;
+    bottom: 48px;
+    left: 165px;
+}
+
+.position-div2 {
+    top: 0px;
+    right: 380px;
+    left: 285px;
+    bottom: 0px;
+}
+
+.position-icons {
+    top: 0px;
+    right: 0px;
+    bottom: 76px;
+    left: 1006px;
+}
+
+.position-text {
+    top: 75px;
+    right: 0px;
+    bottom: 0px;
+    left: 855px;
+}
+
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
     position: absolute;
 }
 
-.pstn--logo {
-    margin: 77px 1115px 400px 165px;
-}
-
-.pstn--home {
-    margin: 83px 986px 406px 405px;
-}
-
-.pstn--home2 {
-    margin: 65px 681px 7px 0;
-}
-
-.pstn--about {
-    margin: 83px 895px 406px 494px;
-}
-
-.pstn--about2 {
-    margin: 65px 590px 7px 89px;
-}
-
-.pstn--btn {
-    margin: 73px 165px 396px 1122px;
-}
-
-.pstn--btn2 {
-    margin: 76px 260px 76px 1027px;
-}
-
-.pstn--section {
-    margin: 241px 165px 120px 545px;
-}
-
-.pstn--About {
-    margin: 241px 925px 176px 165px;
-}
-
-.pstn--donut {
-    margin: 317px 100px 0 1340px;
-}
-
-.pstn--rdy-to-get-strtd {
-    margin: 76px 673px 76px 263px;
-}
-
-.pstn--design-elmnt {
-    margin: 56px 1240px 100px 0;
-}
-
-.pstn--section-footer {
-    margin: 48px 165px 48px 165px;
-}
-
-.pstn--p-footer {
-    margin: 75px 0 0 855px;
-}
-
-.pstn--icons {
-    margin: 0 0 76px 1006px;
-}
-
-.pstn--div {
-    margin: 0 380px 0 285px;
-}
-
-.pstn--logo2 {
-    margin: 0 570px 60px 0;
-}
-
-
-
-
-.font-style--normal {
-    font-style: normal;
-}
-
-.font-size--15px {
-    font-size: 15px;
-}
-
-.font-size--18px {
-    font-size: 18px;
-}
-
-.font-size--48px {
-    font-size: 48px;
-}
-
-.font-size--64px {
-    font-size: 64px;
-}
-
-.font-weight--600 {
-    font-weight: 600;
-}
-
-.font-weight--700 {
-    font-weight: 700;
-}
-
-
-
-
-.width--49px {
-    width:49px;
-}
-
-.width--51px {
-    width: 51px;
-}
-
-.width--88px {
-    width: 88px;
-}
-
-.width--100px {
-    width: 100px;
-}
-
-.width--104px {
-    width: 104px;
-}
-
-.width--153px {
-    width: 153px;
-}
-
-.width--160px {
-    width: 160px;
-}
-
-.width--244px {
-    width: 244px;
-}
-
-.width--255px {
-    width: 255px;
-}
-
-.width--350px {
-    width: 350px;
-}
-
-.width--445px {
-    width: 445px;
-}
-
-.width--730px {
-    width: 730px;
-}
-
-.width--1110px {
-    width: 1110px;
-}
-
-
-
-.height--24px {
-    height: 24px;
-}
-
-.height--25px {
-    height: 25px;
-}
-
-.height--28px {
-    height: 28px;
-}
-
-.height--40px {
-    height: 40px;
-}
-
-.height--48px {
-    height: 48px;
-}
-
-.height--70px {
-    height: 70px;
-}
-
-.height--100px {
-    height: 100px;
-}
-
-.height--112px {
-    height: 112px;
-}
-
-.height--156px {
-    height: 156px;
-}
-
-.height--196px {
-    height: 196px;
-}
-
-.height--200px {
-    height: 200px;
-}
-
-.height--517px {
-    height: 517px;
-}
-
-
-.line-height--25px {
-    line-height: 25px;
-}
-
-.line-height--28px {
-    line-height: 28px;
-}
-
-.line-height--48px {
-    line-height: 48px;
-}
-
-.line-height--100px {
-    line-height: 100px;
-}
-
-
-
-
-.jstf-cntnt--center {
+.justify-content-center {
     justify-content: center;
 }
 
-.jstf-cntnt--space-between {
-    justify-content: space-between;
-}
-
-.display--flex {
+.display-flex {
     display: flex;
 }
 
-.flex-drctn--clmn {
+.flex-direction-column {
     flex-direction: column;
 }
 
@@ -276,67 +184,217 @@ a {
     align-items: flex-start;
 }
 
-.align-items--center {
-    align-items: center;
+
+
+
+.font-style-normal {
+    font-style: normal;
 }
 
-.text-align--left {
+
+.font-size-15px {
+    font-size: 15px;
+}
+
+.font-size-18px {
+    font-size: 18px;
+}
+
+.font-size-48px {
+    font-size: 48px;
+}
+
+.font-size-64px {
+    font-size: 64px;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+
+
+
+.width-49px {
+    width:49px;
+}
+
+.width-51px {
+    width: 51px;
+}
+
+.width-88px {
+    width: 88px;
+}
+
+.width-100px {
+    width: 100px;
+}
+
+.width-104px {
+    width: 104px;
+}
+
+.width-153px {
+    width: 153px;
+}
+
+.width-160px {
+    width: 160px;
+}
+
+
+.width-244px {
+    width: 244px;
+}
+
+.width-255px {
+    width: 255px;
+}
+
+.width-350px {
+    width: 350px;
+}
+
+.width-445px {
+    width: 445px;
+}
+
+.width-730px {
+    width: 730px;
+}
+
+.width-1110px {
+    width: 1110px;
+}
+
+
+
+.height-24px {
+    height: 24px;
+}
+
+.height-25px {
+    height: 25px;
+}
+
+.height-28px {
+    height: 28px;
+}
+
+.height-40px {
+    height: 40px;
+}
+
+.height-48px {
+    height: 48px;
+}
+
+.height-100px {
+    height: 100px;
+}
+
+.height-156px {
+    height: 156px;
+}
+
+.height-196px {
+    height: 196px;
+}
+
+.height-200px {
+    height: 200px;
+}
+
+.height-437px {
+    height: 437px;
+}
+
+.height-517px {
+    height: 517px;
+}
+
+.height-1002px {
+    height: 1002px;
+}
+
+
+
+.line-height-25px {
+    line-height: 25px;
+}
+
+.line-height-28px {
+    line-height: 28px;
+}
+
+.line-height-48px {
+    line-height: 48px;
+}
+
+.line-height-100px {
+    line-height: 100px;
+}
+
+
+
+.text-align-left {
     text-align: left;
 }
 
-.text-align--right {
+.text-align-right {
     text-align: right;
 }
 
-.flex-shrink--0 {
+.flex-shrink-0 {
     flex-shrink: 0;
 }
 
-
-
-.bckgrnd-color--inherit {
-    background-color: inherit;
+.background-color-004047 {
+    background-color: #004047;
 }
 
-.bckgrnd-clr--014E56 {
+.background-color-014E56 {
     background-color: #014E56;
 }
 
-.bckgrnd-color--F67E7E {
+.background-color-F67E7E {
     background-color: #F67E7E;
 }
 
-.bckgrnd-color--002529 {
+.background-color-002529 {
     background-color: #002529;
 }
 
-.color--FFF {
+.background-color-012F34 {
+    background-color: #012F34;
+}
+
+.color-FFF {
     color: #FFF;
 }
 
-.color--012F34 {
+.color-012F34 {
     color: #012F34;
 }
 
 
 
-
-
-.gap--20px {
-    gap: 20px;
-}
-
-.gap--40px {
+.gap-40px {
     gap: 40px;
 }
 
 
 
-.btn-border {
+.button-border {
     border: 2px solid #FFF;
 }
 
-.btn-border2 {
+.button-border2 {
     border: 2px solid #012F34;
 }
 
@@ -344,7 +402,7 @@ a {
     border: 1px solid black;
 }
 
-.border-radius--24px {
+.border-radius-24px {
     border-radius: 24px;
 }
 
@@ -353,15 +411,16 @@ a {
     opacity: 0.6;
 }
 
-.overflow--hidden {
+.overflow-hidden {
     overflow: hidden;
 }
 
-
+.
 
 
 /* our clients main stiles */
-section.ourClients {
+
+.ourClients {
     position: relative;
     background-color: hsl(186, 96%, 10%);
     color: white;
