@@ -306,162 +306,18 @@ div {
   margin-bottom: 79px;
 }
 
-
-.position-div {
-  top: 48px;
-  right: 165px;
-  bottom: 48px;
-  left: 165px;
+footer {
+  padding-top: 35px;
 }
 
-.position-home2 {
-  top: 65px;
-  right: 685px;
-  bottom: 7px;
-  left: 0px;
+.position-design-element {
+    margin-right: 125px;
 }
 
-.position-about2 {
-  top: 65px;
-  right: 590px;
-  bottom: 7px;
-  left: 89px;
-}
-
-.position-logo2 {
-  top: 0px;
-  right: 570px;
-  bottom: 60px;
-  left: 0px;
-}
-
-.position-sctn {
-  top: 0px;
-  right: 380px;
-  left: 285px;
-  bottom: 0px;
-}
-
-.position-social-media-icons {
-  top: 0px;
-  right: 0px;
-  bottom: 76px;
-  left: 1006px;
-}
-
-.position-p {
-  top: 75px;
-  right: 0px;
-  bottom: 0px;
-  left: 855px;
-}
-
-.position-absolute {
-  position: absolute;
-}
-
-.position-relative {
-  position: relative;
-}
-
-
-
-.height-24px {
-  height: 24px;
-}
-
-.height-25px {
-  height: 25px;
-}
-
-.height-28px {
-  height: 28px;
-}
-
-.height-40px {
-  height: 40px;
-}
-
-.height-100px {
-  height: 100px;
-}
-
-.height-196px {
-  height: 196px;
-}
-
-.line-height-25px {
-  line-height: 25px;
-}
-
-
-.width-49px {
-  width: 49px;
-}
-
-.width-51px {
-  width: 51px;
-}
-
-.width-104px {
-  width: 104px;
-}
-
-.width-160px {
-  width: 160px;
-}
-
-.width-255px {
-  width: 255px;
-}
-
-.width-445px {
-  width: 445px;
-}
-
-
-
-
-.font-style-normal {
-  font-style: normal;
-}
-
-.font-size-15px {
-  font-size: 15px;
-}
-
-.font-size-18px {
-  font-size: 18px;
-}
-
-.font-weight-600 {
-  font-weight: 600;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
-
-.background-color-002529 {
-  background-color: #002529;
-}
-
-.color-FFF {
-  color: #FFF;
-}
-
-.border {
-  border: 1px solid black;
-}
-
-.opacity-06 {
-  opacity: 0.6;
-}
-
-.text-align-right {
-  text-align: right;
-}
-
-a {
-  text-decoration: none;
+body a:hover {
+    cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 1px 2px #000);
 }
