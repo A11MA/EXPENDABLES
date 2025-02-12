@@ -71,6 +71,12 @@ a {
     flex-wrap: wrap;
 }
 
+.container2 {
+    display: flex;
+    gap: 150px;
+    padding-right: 335px;
+}
+
 .link {
     color:#FFF;
     height: 28px;
@@ -406,7 +412,7 @@ main > header > nav > a:hover {
     filter: drop-shadow(0px 1px 2px #000);
 }
 
-main > footer > section > div > nav > a:hover {
+main > footer > section > div  nav > a:hover {
     cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
     fill: #FFF;
     stroke-width: 1px;
@@ -421,6 +427,10 @@ main > section > a:hover {
     stroke: #000;
     filter: drop-shadow(0px 1px 2px #000);
 }
+
+a:hover {
+    color: #F67E7E;
+    }
 
 /* our clients main stiles */
 
