@@ -12,36 +12,41 @@
   </head>
   <body>
     <header>
-
-      <!-- Logo -->
+      <!-- header nav bar is kaires logo -->
       <div class="nav_logo">
-        <img
-          src="images/header_logo.svg"
-          alt="header_logo"
-          class="width--160px height--40px"
-        />
+        <img src="images/nav-icon.svg" alt="header_logo" />
       </div>
 
-      <!-- meniu -->
-      <nav>
-        <div class="nav_meniu">
-          <a href="index.html">Home</a>
-          <a href="pages/about.html">About</a>
-        </div>
-
-        <!-- mygtukas Contact Us -->
-        <a href="pages/contact.html">
-          <button class="contact-btn" aria-label="contact us">
-            Contact Us
-          </button>
-        </a>
-
-        <!-- mygtukas gamburger -->
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-      </nav>
-    </header>
-    <div>
-
+      <!-- header nav bar -->
+      <div class="desktop-menu">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="pages/about.html">about</a></li>
+        </ul>
+      </div>
+      <!-- mygtukas contact us -->
+      <div class="contact-btn-meniu">
+        <a href="pages/contact.html" class="contact-us">contact us</a>
+      </div>
+      <!-- ikona mobiliam irenginiuj  -->
+      <div class="menu-icon" onclick="toggleMenu()" aria-label="Open menu">☰</div>
+   
+    <!-- meniu mobiliam irenginiuj -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <span class="close-btn" onclick="toggleMenu()" aria-label="Close menu">✖</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li>
+          <a href="pages/contact.html" class="contact-btn">Contact us</a>
+        </li>
+      </ul>
+      <img src="images/mobile-icon.svg" alt="Mobile icon" />
+    </nav> 
+  </header>
+  <!-- test -->
      <!-- Article 1 section -->
     <article class="article-one">
         <img class="pic-one" src="images/bg-pattern-home-1.svg" alt="background decoration">
@@ -63,123 +68,121 @@
             </div>
         </div>
              </article>
+             <article class="home-article-1">
+              <h2 class="ar1-left-h2 h2-font">
+                Build & manage distributed teams like no one else.
+              </h2>
+              <div class="ar1-right-container">
+                <div class="ar1-right-div">
+                  <img
+                    class="ar1-icon"
+                    src="images/person.icon.svg"
+                    alt="person icon"
+                  />
+                  <div class="text-content">
+                    <h3 class="h3-font">Experienced Individuals</h3>
+                    <p class="ar1-parahraph-style body2-font">
+                      Our network is made up of highly experienced professionals who are
+                      passionate about what they do.
+                    </p>
+                  </div>
+                </div>
+                <div class="ar1-right-div">
+                  <img class="ar1-icon" src="images/gear.icon.svg" alt="cog icon" />
+                  <div class="text-content">
+                    <h3 class="h3-font">Easy to Implement</h3>
+                    <p class="ar1-parahraph-style body2-font">
+                      Our processes have been refined over years of implementation
+                      meaning our teams always deliver.
+                    </p>
+                  </div>
+                </div>
+                <div class="ar1-right-div">
+                  <img
+                    class="ar1-icon"
+                    src="images/diagram.icon.svg"
+                    alt="chart icon"
+                  />
+                  <div class="text-content">
+                    <h3 class="h3-font">Enhanced Productivity</h3>
+                    <p class="ar1-parahraph-style body2-font">
+                      Our customized platform with in-built analytics helps you manage
+                      your distributed teams.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  class="ar1-background-decoration"
+                  src="images/background.decoration.svg"
+                  alt="decorative background element"
+                />
+              </div>
+            </article>
+            <article class="home-article-2">
+              <div class="ar2-heading-container">
+                  <h2 class="ar2-h2 h2-font">Delivering real results for top companies. Some of our <span class="ar2-span">success stories.</span></h2>
+              </div>
+              <div class="ar2-cards-container">
+                  <div class="ar2-card">
+                      <img class="ar2-quote-mark" src="images/quote-mark.svg" alt="decorative quote mark">
+                      <p class="ar2-parahraph-style body2-font"> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
+                      <h3 class="ar2-last-name h3-font">Kady Baker</h3>
+                      <h6 class="ar2-title">Product Manager at Bookmark</h6>
+                      <img class="ar2-avatar" src="images/kady_Oval.png" alt="person image">
+                  </div>
+                  <div class="ar2-card">
+                      <img class="ar2-quote-mark" src="images/quote-mark.svg" alt="decorative quote mark">
+                     <p class="ar2-parahraph-style body2-font">“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p> 
+                     <h3 class="ar2-last-name h3-font">Aiysha Reese</h3>
+                     <h6 class="ar2-title">Founder of Manage</h6>
+                     <img class="ar2-avatar" src="images/aiysha_Oval.png" alt="image of Aiysha">
+                  </div>
+                  <div class="ar2-card">
+                      <img class="ar2-quote-mark" src="images/quote-mark.svg" alt="decorative quote mark">
+                     <p class="ar2-parahraph-style body2-font">“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p> 
+                     <h3 class="ar2-last-name h3-font">Arthur Clarke</h3>
+                     <h6 class="ar2-title">Co-founder of MyPhysio</h6>
+                     <img class="ar2-avatar" src="images/artur_Oval.png" alt="Arthur Clarke">
+                  </div>
+              </div>
+              <img class="ar2-circle-bg-decoration" src="images/ar2-circle-bg-decoration.svg" alt="circle background decoration">
+              <img class="ar2-square-bg-decoration" src="images/ar2-square-bg-decoration.svg" alt="square background decoration">
+          </article>
 
-    <article class="home-article-1">
 
-      <h2 class="ar1-left-h2 h2-font">
-        Build & manage distributed teams like no one else.
-      </h2>
-      <div class="ar1-right-container">
-        <div class="ar1-right-div">
-          <img
-            class="ar1-icon"
-            src="images/person.icon.svg"
-            alt="person icon"
-          />
-          <div class="text-content">
-            <h3 class="h3-font">Experienced Individuals</h3>
-            <p class="ar1-parahraph-style body2-font">
-              Our network is made up of highly experienced professionals who are
-              passionate about what they do.
-            </p>
-          </div>
-        </div>
-        <div class="ar1-right-div">
-          <img class="ar1-icon" src="images/gear.icon.svg" alt="cog icon" />
-          <div class="text-content">
-            <h3 class="h3-font">Easy to Implement</h3>
-            <p class="ar1-parahraph-style body2-font">
-              Our processes have been refined over years of implementation
-              meaning our teams always deliver.
-            </p>
-          </div>
-        </div>
-        <div class="ar1-right-div">
-          <img
-            class="ar1-icon"
-            src="images/diagram.icon.svg"
-            alt="chart icon"
-          />
-          <div class="text-content">
-            <h3 class="h3-font">Enhanced Productivity</h3>
-            <p class="ar1-parahraph-style body2-font">
-              Our customized platform with in-built analytics helps you manage
-              your distributed teams.
-            </p>
-          </div>
-        </div>
-        <img
-          class="ar1-background-decoration"
-          src="images/background.decoration.svg"
-          alt="decorative background element"
-        />
-      </div>
-    </article>
-    </article>  
-    <article class="home-article-2">
-      <div class="ar2-heading-container">
-          <h2 class="ar2-h2 h2-font">Delivering real results for top companies. <span class="ar2-span">Some of our success stories.</span></h2>
-      </div>
-      <div class="ar2-cards-container">
-          <div class="ar2-card">
-              <img class="ar2-quote-mark" src="images/quote-mark.svg" alt="decorative quote mark">
-              <p class="ar2-parahraph-style body2-font"> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
-              <h3 class="ar2-last-name h3-font">Kady Baker</h3>
-              <h6 class="ar2-title">Product Manager at Bookmark</h6>
-              <img class="ar2-avatar" src="images/kady_Oval.png" alt="person image">
-          </div>
-          <div class="ar2-card">
-              <img class="ar2-quote-mark" src="images/quote-mark.svg" alt="decorative quote mark">
-             <p class="ar2-parahraph-style body2-font">“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p> 
-             <h3 class="ar2-last-name h3-font">Aiysha Reese</h3>
-             <h6 class="ar2-title">Founder of Manage</h6>
-             <img class="ar2-avatar" src="images/aiysha_Oval.png" alt="image of Aiysha">
-          </div>
-          <div class="ar2-card">
-              <img class="ar2-quote-mark" src="images/quote-mark.svg" alt="decorative quote mark">
-             <p class="ar2-parahraph-style body2-font">“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p> 
-             <h3 class="ar2-last-name h3-font">Arthur Clarke</h3>
-             <h6 class="ar2-title">Co-founder of MyPhysio</h6>
-             <img class="ar2-avatar" src="images/artur_Oval.png" alt="Arthur Clarke">
-          </div>
-      </div>
-      <img class="ar2-circle-bg-decoration" src="images/ar2-circle-bg-decoration.svg" alt="circle background decoration">
-      <img class="ar2-square-bg-decoration" src="images/ar2-square-bg-decoration.svg" alt="square background decoration">
-  </article>
+          <section class="height-200px flex-shrink-0 background-color-F67E7E overflow-hidden section-red">
 
-  <section class="height-200px flex-shrink-0 background-color-F67E7E overflow-hidden section-red">
-
-    <img src="images/Group8.png" alt="design element" class="flex-shrink-0 height-200px width-244px position-design-element">
-
-    <h4 class="color-012F34 font-size-48px font-style-normal font-weight-700 line-height-48px">Ready to get started?</h4>
+            <img src="images/Group8.png" alt="design element" class="flex-shrink-0 height-200px width-244px position-absolute position-design-element">
     
-    <a href="pages/contact.html" class="width-153px height-48px flex-shrink-0 border-radius-24px button-border2 position-button2"><span class="width-88px height-28px color-012F34 font-size-18px font-style-normal font-weight-600 line-height-28px">contact us</span></a>
-  </section>
+            <h4 class="color-012F34 font-size-48px font-style-normal font-weight-700 line-height-48px">Ready to get started?</h4>
+            
+            <a href="../pages/contact.html" class="button2 position-button2"><span class="contact-us2">contact us</span></a>
+          </section>
+          
+          <footer class="height-196px flex-shrink-0 background-color-002529">
+            <section class="container">
+    
+              <div class="flex-wrap--wrap">
+                <img src="images/myteam_logo.png" alt="MyTeam logo" class="width-160px height-40px flex-shrink-0">
+                <nav class="nav-2">
+                  <a href="index.html" class="width-49px link">home</a>
+      
+                  <a href="pages/about.html" class="width-51px link">about</a>
+                </nav>
+              </div>
+          
+    
+              <p class="font-size-15px font-style-normal font-weight-600 line-height-25px opct-06">987  Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
+    
+              <div class="align-self--flex-end">
+                <img src="images/ikonos.png" alt="social media icons" class="width-104px height-24px flex-shrink-0 position-icons">
+    
+                <p class="width-255px height-25px text-align-right font-size-15px font-style-normal font-weight-600 line-height-25px opct-06">Copyright 2020. All Rights Reserved</p>
+              </div>
+            </section>
+          </footer>
 
-  <footer class="height-196px flex-shrink-0 background-color-002529">
-    <section class="container">
-
-      <div class="flex-wrap--wrap">
-        <img src="images/myteam_logo.png" alt="MyTeam logo" class="width-160px height-40px flex-shrink-0">
-        <nav class="nav-2">
-          <a href="index.html" class="width-49px height-28px color-FFF font-size-18px font-style-normal font-weight-600 line-height-28px">home</a>
-
-          <a href="pages/about.html" class="width-51px height-28px color-FFF font-size-18px font-style-normal font-weight-600 line-height-28px">about</a>
-        </nav>
-      </div>
-  
-
-      <p class="font-size-15px font-style-normal font-weight-600 line-height-25px opct-06">987  Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
-
-      <div class="align-self--flex-end">
-        <img src="images/ikonos.png" alt="social media icons" class="width-104px height-24px flex-shrink-0 position-icons">
-
-        <p class="width-255px height-25px text-align-right font-size-15px font-style-normal font-weight-600 line-height-25px opct-06">Copyright 2020. All Rights Reserved</p>
-      </div>
-    </section>
-  </footer>
-
-    <script src="js/nav_bar.js"></script>
+    <script src="JS/nav_bar.js"></script>
   </body>
 </html>
 
