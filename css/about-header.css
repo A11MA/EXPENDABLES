@@ -1,0 +1,237 @@
+/* Bendrieji stiliai sekcijai */
+.about-section {
+  display: flex;
+  background-color: #014e56;
+  width: 100%;
+}
+
+/* Pagrindinio fono spalva */
+body {
+  background-color: #014e56;
+}
+
+/* Stiliai antraštės elementui */
+.about-section h1 {
+  flex-shrink: 0;
+  margin-left: 165px; /* Atstumas nuo kairio krašto */
+  margin-top: 124px; /* Atstumas nuo viršaus */
+  color: #fff;
+  font-family: Livvic;
+  font-size: 64px;
+  font-weight: 700;
+  height: 100px;
+  justify-content: space-between;
+}
+
+/* Teksto stiliai */
+.about-text {
+  flex-shrink: 0;
+  margin-left: 230px; /* Atstumas nuo kairio krašto */
+  margin-top: 120px; /* Atstumas nuo viršaus */
+  color: #fff;
+  font-family: Livvic;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  width: 730px; /* Teksto plotis */
+  height: auto;
+}
+
+/* Raudona linija po antrašte */
+.red-line-about-header {
+  width: 50px;
+  height: 4px;
+  background-color: #f67e7e;
+}
+
+/* Paveikslėlio stiliai */
+.heder-about-img {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-top: 100px; /* Atstumas nuo viršaus */
+  margin-right: -100px; /* Atstumas nuo dešinės */
+}
+
+* {
+  transition: all 0.3s ease; /* Lygus perėjimas visiems ypatybėms */
+}
+
+/* Mobilūs įrenginiai (320px - 767px) */
+@media (min-width: 320px) and (max-width: 739px) {
+  .about-section {
+    display: flex;
+    flex-direction: column; /* Elementai išdėstomi vertikaliai */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .about-section h1 {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .red-line-about-header {
+    display: none; /* Paslėpti raudoną liniją mobiliaisiais įrenginiais */
+  }
+
+  .about-text {
+    margin: 1px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 90%;
+    font-size: 15px;
+    line-height: 28px;
+    width: 100%;
+  }
+
+  .heder-about-img {
+    display: block;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    right: 0;
+    margin: 0 1px 1px 0;
+    bottom: 150px; /* Paveikslėlis priklijuotas prie dešinio kampo */
+  }
+}
+
+/* Planšetės (768px - 1024px) */
+@media (min-width: 740px) and (max-width: 899px) {
+  .about-section {
+    display: flex;
+    flex-direction: column; /* Elementai išdėstomi vertikaliai */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .about-section h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-text {
+    width: 70%; /* Siauriname tekstą, kad liktų vietos paveikslėliui */
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left; /* Tekstas išlyginamas kairėje */
+    margin: 30px 0;
+  }
+
+  .heder-about-img {
+    display: block;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    right: 0;
+    margin: 0 1px 1px 0;
+    bottom: 200px; /* Paveikslėlio padėtis žemiau */
+  }
+
+  .red-line-about-header {
+    display: none; /* Paslėpti raudoną liniją planšetėje */
+  }
+}
+
+/* Desktopo įrenginiai */
+@media (min-width: 900px) and (max-width: 1239px) {
+  .about-section {
+    display: flex;
+    flex-direction: row; /* Elementai išdėstomi horizontaliai */
+    align-items: center; /* Vertikaliai išlyginama centras */
+    justify-content: flex-start; /* Elementai išlyginami kairėje */
+    width: 100%;
+    padding: 0 40px; /* Pridedami atstumai nuo kraštų */
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .about-section h1 {
+    font-size: 64px; /* Didinamas antraštės dydis */
+    margin-left: 140px; /* Atstumas nuo kairio krašto */
+    margin-right: 0; /* Nėra dešinio atstumo */
+    width: auto;
+  }
+
+  .about-text {
+    width: 50%; /* Tekstas užima 50% vietos */
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left; /* Tekstas išlyginamas kairėje */
+    margin-left: 180px; /* Pridedamas atstumas kairėje */
+  }
+
+  .red-line-about-header {
+    display: block; /* Parodoma raudona linija */
+    width: 50px;
+    height: 4px;
+    background-color: #f67e7e;
+    margin-top: 20px;
+  }
+
+  .heder-about-img {
+    width: 200px; /* Paveikslėlio dydis */
+    height: 200px;
+    margin-left: auto; /* Atstumas iš dešinės */
+    position: relative;
+    top: 110px; /* Slenkame paveikslėlį žemyn */
+  }
+}
+
+@media (min-width: 1240px)  {
+  .about-section {
+    display: flex;
+    flex-direction: row; /* Elementai išdėstomi horizontaliai */
+    align-items: center; /* Vertikaliai išlyginama centras */
+    justify-content: flex-start; /* Elementai išlyginami kairėje */
+    width: 100%;
+    padding: 0 40px; /* Pridedami atstumai nuo kraštų */
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .about-section h1 {
+    font-size: 64px; /* Didinamas antraštės dydis */
+    margin-left: 140px; /* Atstumas nuo kairio krašto */
+    margin-right: 0; /* Nėra dešinio atstumo */
+    width: auto;
+  }
+
+  .about-text {
+    width: 50%; /* Tekstas užima 50% vietos */
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left; /* Tekstas išlyginamas kairėje */
+    margin-left: 180px; /* Pridedamas atstumas kairėje */
+  }
+
+  .red-line-about-header {
+    display: block; /* Parodoma raudona linija */
+    width: 50px;
+    height: 4px;
+    background-color: #f67e7e;
+    margin-top: 20px;
+  }
+
+  .heder-about-img {
+    width: 200px; /* Paveikslėlio dydis */
+    height: 200px;
+    margin-left: auto; /* Atstumas iš dešinės */
+    position: relative;
+    top: 110px; /* Slenkame paveikslėlį žemyn */
+  }
+}

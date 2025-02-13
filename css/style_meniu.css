@@ -12,6 +12,7 @@ header {
   background-color: #014e56;
   justify-content: space-between;
   width: 100%;
+  margin: 0 auto;
 }
 
 /* **************************   1.  Desktop meniu pozicionavimas********************************** */
@@ -173,9 +174,15 @@ header {
   cursor: pointer;
   color: #fff;
 }
+
+
+* {
+  transition: all 0.3s ease; /* Lygus perėjimas visiems ypatybėms */
+}
+
 /* **********************************************************  3. Media mob,  pozicionavimas visi elementai ************************** */
-/* mobilus irenginis (320px - 767px) */
-@media (max-width: 767px) {
+/* mobilus irenginis (320px - 740px) */
+@media (min-width: 320px) and (max-width: 739px) {
   .nav_logo {
     margin-left: 48px;
     margin-top: 24px;
@@ -195,11 +202,30 @@ header {
     margin-top: 24px;
     margin-left: auto;
   }
+  .mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+  }
+ .mobile-menu ul li {
+  margin-bottom: 20px;
+}
+
+  .mobile-menu img {
+    position: absolute;
+    bottom: 20px; 
+    right: 0px;   
+    width: 100px;   
+    height: auto;
+
+    
+  }
+
 }
 
 /* ********************************************************  4. Media tablet,  pozicionavimas visi elementa ******************************  */
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 899px) {
   .nav_logo {
     margin-left: 39px;
     margin-top: 72px;
@@ -220,3 +246,167 @@ header {
 
   }
 }
+
+/* Desktopo įrenginiai (1240px ir daugiau) */
+
+@media (min-width: 900px) and (max-width: 1239px) {
+  /* Kontrolės baras ir pagrindinis meniu */
+  .desktop-menu {
+    display: flex;
+    justify-content: flex-start; /* Elementai išlyginami kairėje */
+    margin-top: 60px; /* Atstumas nuo viršaus */
+  }
+
+  /* Meniu elementų išdėstymas */
+  .desktop-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Tarpai tarp meniu punktų */
+  .desktop-menu ul li {
+    margin-right: 40px; /* Atstumas tarp meniu punktų */
+  }
+
+  /* Meniu nuorodų stilius */
+  .desktop-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Livvic", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .desktop-menu ul li a:hover {
+    color: #f67e7e;
+  }
+
+/* Meniu elementų išdėstymas */
+.desktop-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 20px;
+  padding: 15px;
+}
+
+  /* Atsarginės nuorodos, pavyzdžiui, "Contact Us" */
+  .contact-btn-meniu {
+    margin-top: 60px; /* Atstumas nuo viršaus */
+    margin-left: auto; /* Automatinis atstumas kairėje */
+    margin-right: 40px; /* Atstumas iš dešinės */
+  }
+
+  /* Stilius mygtuko "Contact Us" */
+  .contact-us {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    color: #fff;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 153px;
+    height: 48px;
+  }
+
+  .contact-us:hover {
+    background-color: #fff;
+    color: #033c3d;
+  }
+
+  .nav_logo {
+    margin-left: 39px;
+    margin-top: 72px;
+    width: 128px;
+    height: 32px;
+  }
+
+ 
+
+}
+
+@media (min-width: 1240px){
+  .desktop-menu {
+    display: flex;
+    justify-content: flex-start; /* Elementai išlyginami kairėje */
+    margin-top: 60px; /* Atstumas nuo viršaus */
+  }
+
+  /* Meniu elementų išdėstymas */
+  .desktop-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Tarpai tarp meniu punktų */
+  .desktop-menu ul li {
+    margin-right: 40px; /* Atstumas tarp meniu punktų */
+  }
+
+  /* Meniu nuorodų stilius */
+  .desktop-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Livvic", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .desktop-menu ul li a:hover {
+    color: #f67e7e;
+  }
+
+/* Meniu elementų išdėstymas */
+.desktop-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 20px;
+  padding: 15px;
+}
+
+  /* Atsarginės nuorodos, pavyzdžiui, "Contact Us" */
+  .contact-btn-meniu {
+    margin-top: 60px; /* Atstumas nuo viršaus */
+    margin-left: auto; /* Automatinis atstumas kairėje */
+    margin-right: 40px; /* Atstumas iš dešinės */
+  }
+
+  /* Stilius mygtuko "Contact Us" */
+  .contact-us {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    color: #fff;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 153px;
+    height: 48px;
+  }
+
+  .contact-us:hover {
+    background-color: #fff;
+    color: #033c3d;
+  }
+
+  .nav_logo {
+    margin-left: 39px;
+    margin-top: 72px;
+    width: 128px;
+    height: 32px;
+  }
+
+ 
+    
+}
+

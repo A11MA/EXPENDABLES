@@ -72,25 +72,45 @@
       <!-- kontact form  -->
       <div class="contact-form">
         <form id="contactForm" novalidate>
-          <input type="text" id="name" placeholder="Name" required />
+          <input type="text" id="name" placeholder="Name" maxlength="250" />
           <span class="error-message" id="nameError"></span>
 
-          <input type="email" id="email" placeholder="Email Address" autocomplete="email"  required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            autocomplete="email"
+          />
           <span class="error-message" id="emailError"></span>
 
-          <input type="text" id="company" placeholder="Company Name" required />
+          <input
+            type="text"
+            id="company"
+            placeholder="Company Name"
+            maxlength="250"
+            required
+          />
           <span class="error-message" id="companyError"></span>
 
           <input type="text" id="title" placeholder="Title" required />
           <span class="error-message" id="titleError"></span>
 
-          <textarea id="message" placeholder="Message"  required maxlength="250"></textarea>
+          <textarea
+            id="message"
+            placeholder="Message"
+            maxlength="250"
+          ></textarea>
           <span class="error-message" id="messageError"></span>
+          <p id="charCount">
+            Įvesta simbolių: <span id="charNumber">0</span> / 250
+          </p>
+          <!-- skaitliukas -->
 
           <button type="submit">Submit</button>
         </form>
+        <!-- pranesymas apie sekminga issiuntima  -->
+        <p id="messageSuccess" style="color: green; display: none"></p>
       </div>
-
       <div class="top-left-deco">
         <img src="../images/contact_logo.svg" alt="Logo1" />
       </div>
