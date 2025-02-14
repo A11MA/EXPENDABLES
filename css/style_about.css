@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Livvic", serif;
+    color: #FFF;
+}
+
+body > main {
+    width: 100%;
+}
+
+body > main > footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px; /* Apriboja didžiausią plotį */
+    margin: 0 auto;
+    padding: 20px 40px;
+    position: absolute;
+    top: 75px;
+    left: 27.5%;
+    gap: 45px;
+}
+
+.nav-2 {
+    margin-top: 25px;
+    display: flex;
+    gap: 30px;
+}
+
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 1440px;
+    padding-top: 250px;
+}
+
+.section-red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.container {
+    width: 1110px;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    display: flex;
+    gap: 150px;
+    padding-right: 335px;
+}
+
+.link {
+    color:#FFF;
+    height: 28px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.border-radius-24px {
+    border-radius: 24px;
+}
+
+.button1 {
+    border: 2px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    margin-left: auto;
+}
+
+.button1:hover {
+    background-color: #FFF;
+}
+
+.contact-us1 {
+    width: 88px;
+    height: 28px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: #FFF;
+}
+
+.contact-us1:hover {
+    color: #002529;
+}
+
+.button2 {
+    border: 2px solid #012F34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 24px;
+}
+
+.button2:hover {
+    background-color: #012F34;
+}
+
+.contact-us2 {
+    width: 88px;
+    height: 28px;
+    color: #012F34;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.contact-us2:hover {
+    color: #FFF;
+}
+
+.position-About {
+    margin-right: 185px;
+}
+
+.position-donut {
+    top: 316px;
+    right: 750px;
+}
+
+.position-button {
+    margin-right: 35px;
+}
+
+.position-button2 {
+    margin-left: 290px;
+}
+
+.position-design-element {
+    top: 15px;
+    right: 2100px;
+}
+
+.position-icons {
+    margin-left: 150px;
+    margin-bottom: 45px;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+.display-flex {
+    display: flex;
+}
+
+.flex-wrap--wrap {
+    flex-wrap: wrap;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.align-items--flex-start {
+    align-items: flex-start;
+}
+
+.align-self--flex-end {
+    align-self: flex-end;
+}
+
+
+
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.font-size-15px {
+    font-size: 15px;
+}
+
+.font-size-18px {
+    font-size: 18px;
+}
+
+.font-size-48px {
+    font-size: 48px;
+}
+
+.font-size-64px {
+    font-size: 64px;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+
+
+
+.width-49px {
+    width:49px;
+}
+
+.width-51px {
+    width: 51px;
+}
+
+.width-88px {
+    width: 88px;
+}
+
+.width-100px {
+    width: 100px;
+}
+
+.width-104px {
+    width: 104px;
+}
+
+.width-153px {
+    width: 153px;
+}
+
+.width-160px {
+    width: 160px;
+}
+
+.width-244px {
+    width: 244px;
+}
+
+.width-255px {
+    width: 255px;
+}
+
+.width-350px {
+    width: 350px;
+}
+
+.width-730px {
+    width: 730px;
+}
+
+
+
+.height-24px {
+    height: 24px;
+}
+
+.height-25px {
+    height: 25px;
+}
+
+.height-28px {
+    height: 28px;
+}
+
+.height-40px {
+    height: 40px;
+}
+
+.height-48px {
+    height: 48px;
+}
+
+.height-100px {
+    height: 100px;
+}
+
+.height-156px {
+    height: 156px;
+}
+
+.height-196px {
+    height: 196px;
+}
+
+.height-200px {
+    height: 200px;
+}
+
+.height-517px {
+    height: 517px;
+}
+
+
+
+
+.line-height-25px {
+    line-height: 25px;
+}
+
+.line-height-28px {
+    line-height: 28px;
+}
+
+.line-height-48px {
+    line-height: 48px;
+}
+
+.line-height-100px {
+    line-height: 100px;
+}
+
+
+
+
+
+.text-align-right {
+    text-align: right;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.background-color-014E56 {
+    background-color: #014E56;
+}
+
+.background-color-F67E7E {
+    background-color: #F67E7E;
+}
+
+.background-color-002529 {
+    background-color: #002529;
+}
+
+.color-FFF {
+    color: #FFF;
+}
+
+.color-012F34 {
+    color: #012F34;
+}
+
+.gap-40px {
+    gap: 40px;
+}
+
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.opct-06 {
+    opacity: 0.6;
+}
+
+
+main > header > div > section::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    flex-shrink: 0;
+    background-color: #F67E7E;
+}
+
+main > header > nav > a:hover {
+    cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 1px 2px #000);
+}
+
+main > footer > section > div  nav > a:hover {
+    cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 1px 2px #000);
+}
+
+main > section > a:hover {
+    cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 1px 2px #000);
+}
+
+a:hover {
+    color: #F67E7E;
+    }
+
+/* our clients main stiles */
+
+.ourClients {
+    position: relative;
+    background-color: hsl(186, 96%, 10%);
+    color: white;
+    font-family: "Livvic", serif;
+}
+
+/* logo size and position */
+.ourClients .flex-container {
+    padding: 140px 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+/* our clients size and position */
+.ourClients .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ourClients .logo img {
+    width: 100%;
+}
+
+/* clients main title */
+.ourClients .flex-container h2 {
+    width: 100%;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+
+    margin-bottom: 74px;
+}
+
+/* clients img position and size */
+.ourClients .flex-container ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    width: 1110px;
+    height: 45px;
+}
+
+.ourClients .flex-container li {
+    flex: 1;
+}
+
+.ourClients .flex-container li img {
+    width: 80%;
+    max-height: 45px;
+}
+
+
+
