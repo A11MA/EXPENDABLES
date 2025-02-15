@@ -11,14 +11,81 @@
 
   <link rel="stylesheet" href="../css/style_about.css">
   <link rel="stylesheet" href="../css/style_meniu.css" />
+  <link rel="stylesheet" href="../css/styles_about_ourClients.css">
+  <link rel="stylesheet" href="../css/korteles.css">
+  <link rel="stylesheet" href="../css/about-header.css"/>
   
-  <title>Document</title>
+  <title>About</title>
 </head>
 
 
 <body>
+    <header>
+        <!-- header nav bar is kaires logo -->
+        <div class="nav_logo">
+          <img src="../images/nav-icon.svg" alt="header_logo" />
+        </div>
+  
+        <!-- header nav bar -->
+  
+        <div class="desktop-menu">
+          <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../pages/about.html">about</a></li>
+          </ul>
+        </div>
+        <!-- mygtukas contact us -->
+        <div class="contact-btn-meniu">
+          <a href="../pages/contact.html" class="contact-us">contact us</a>
+        </div>
+  
+        <!-- ikona mobiliam irenginiuj  -->
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Open menu">
+          ☰
+        </div>
+      </header>
+  
+      <!-- meniu mobiliam irenginiuj -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+          <span class="close-btn" onclick="toggleMenu()" aria-label="Close menu">✖</span>
+        </div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+          <li>
+            <a href="../pages/contact.html" class="contact-btn">Contact us</a>
+          </li>
+        </ul>
+        <img src="../images/mobile-icon.svg" alt="Mobile icon" />
+      </nav>
+  
+      <div class="about-section">
+        <h1>About</h1>
+        <div class="about-text">
+          <div class="red-line-about-header"></div>
+          <p>
+            We help companies build dynamic teams made up of top global talent.
+            Using our network of passionate professionals, we drive innovation and
+            deliver incredible outcomes. Talented, diverse teams shape the best
+            products and experiences. We’ll bring those teams to you.
+          </p>
+        </div>
+  
+        <div class="heder-about-img">
+          <img src="../images/about-heder-img.svg" alt="about_header_logo" />
+        </div>
+      </div>
+
+
+
+
   <main>
-    <header class="height-517px flex-shrink-0 background-color-014E56">
+
+
+<!-- Nez -->
+
+    <!-- <header class="height-517px flex-shrink-0 background-color-014E56">
       <nav class="nav">
         <img src="../images/myteam_logo.png" alt="MyTeam logo" class="width-160px height-40px flex-shrink-0">
 
@@ -37,7 +104,7 @@
       </div>
 
       <img src="../images/donut.png" alt="design element" class="width-100px height-200px flex-shrink-0 position-absolute position-donut">
-    </header>
+    </header> -->
 
        
       <div class="logo">
@@ -89,6 +156,9 @@
         </section>
       </footer>
     </main>
+
+
+    <script src="../JS/nav_bar.js"></script>
 </body>
 
 </html>
