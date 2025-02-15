@@ -103,110 +103,108 @@ div {
 
 /* ------------------ article 2 sekcija -----------------------*/
 .home-article-2 {
-    margin: 0 auto;
-    background-color: var(--deep-jungle-green); 
-    width: 100%;
-    min-height: 46.56rem;
-    overflow: hidden;  
-    position: relative;   /* reikalingas background icon'ui */
-    display: flex;
-    flex-direction: column;    /* vertikaliai */
-    align-items: center;       /*centre */
-    padding-top: 8.75rem;
-    min-width: 360px;
+  margin: 0 auto;
+  background-color: var(--deep-jungle-green);
+  width: 100%;
+  min-height: 46.56rem;
+  overflow: hidden;
+  position: relative; /* reikalingas background icon'ui */
+  display: flex;
+  flex-direction: column; /* vertikaliai */
+  align-items: center; /*centre */
+  padding-top: 8.75rem;
+  min-width: 360px;
 }
 
 .ar2-h2 {
-    height: 6rem;
-    width: 58.25rem;
-    text-align: center;
-    /* border: 1px solid red; */
+  height: 6rem;
+  width: 58.25rem;
+  text-align: center;
+  /* border: 1px solid red; */
 }
 
 .ar2-span {
-    color: var(--rapture-blue);
+  color: var(--rapture-blue);
 }
-
 
 .ar2-cards-container {
-    display: flex;
-    gap: 1.88rem;
-    margin-top: 3.5rem;
+  display: flex;
+  gap: 1.88rem;
+  margin-top: 3.5rem;
 }
 
-
 .ar2-card {
-    width: 21.87rem;
-    text-align: center;
+  width: 21.87rem;
+  text-align: center;
 }
 
 .ar2-quote-mark {
-    width: 4.1875rem;
-    height: 3.5rem;
-    flex-shrink: 0;
-    margin-bottom: -1.5rem;
+  width: 4.1875rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  margin-bottom: -1.5rem;
 }
 
-.ar2-parahraph-style{
-    margin-bottom: 1.5rem;
+.ar2-parahraph-style {
+  margin-bottom: 1.5rem;
 }
 
-.ar2-last-name{
-    color: var(--rapture-blue);
+.ar2-last-name {
+  color: var(--rapture-blue);
 }
 
-.ar2-title { /* tokio srifto nera pre-defined */
-    font-size: 0.8125rem;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 1.125rem; /* 138.462% */
+.ar2-title {
+  /* tokio srifto nera pre-defined */
+  font-size: 0.8125rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.125rem; /* 138.462% */
 }
 
 .ar2-avatar {
-    margin-top: 2.69rem;
-    width: 3.87rem;
-    height: 3.88rem;
-
+  margin-top: 2.69rem;
+  width: 3.87rem;
+  height: 3.88rem;
 }
 
 .ar2-circle-bg-decoration {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .ar2-square-bg-decoration {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-  
+
 /* Variables */
 
 :root {
-  --mg: #014E56;
+  --mg: #014e56;
   /* Main green */
-  --lc: #F67E7E;
+  --lc: #f67e7e;
   /* Coral */
-  --w: #FFFFFF;
+  --w: #ffffff;
   /* White */
-  --rb: #79C8C7;
+  --rb: #79c8c7;
   /* Blue */
-  --pb: #2C6269;
+  --pb: #2c6269;
   /* Pine */
   --djg: #004047;
   /* Jungle */
-  --ssg: #012F34;
+  --ssg: #012f34;
   /* Sea green */
   --dg: #002529;
   /* Deep green */
-  --ab: #C4FFFE;
+  --ab: #c4fffe;
   /* Avatar border */
 }
 
 /* Article 1 container */
 .article-one {
-  font-family: 'Livvic', sans-serif;
+  font-family: "Livvic", sans-serif;
   width: 100%;
   height: calc(700px - 194px);
   background-color: var(--mg);
@@ -269,10 +267,11 @@ div {
   text-align: left;
   font-size: 100px;
   color: var(--w);
-  font-family: 'Livvic', sans-serif;
+  font-family: "Livvic", sans-serif;
   bottom: 100px;
   left: 190px;
-}.group {
+}
+.group {
   position: absolute;
   top: 0px;
   left: 665px;
@@ -284,321 +283,12 @@ div {
 .just-line {
   width: 50px;
   height: 4px;
-  background-color: #79C8C7;
+  background-color: #79c8c7;
   margin-bottom: 79px;
 }
-
-
-
-
-/* pridetas media q mazesneism ekranams MANO ARTICLE-1 IR 2 DEL GRAZESNIO PERSIRYKIAVIMO. NEBUTINAS */
-@media screen and (max-width: 1240px) {
-  .home-article-1 {
-    width: 100%;
-  }
-
-
-  .ar1-right-div {
-    justify-content: center;
-  }
-
-  .ar1-left-h2,
-  .ar1-right-container {
-    float: none;
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 50px;
-    margin-bottom: 50px;
-  }
-  .ar1-left-h2::before {
-    /* juostele prie h2 teksto*/
-    content: "";
-    top: 2.5rem; /* atstumas i virsu nuo "build" zodzio*/
-    left: 0;
-    width: 3.125rem;
-    height: 0.25rem;
-    background-color: var(--light-coral);
-  }
-
-  /* article 2 suspaudimas  */
-  .home-article-2 {
-    overflow: hidden;
-    padding-top: 6.1rem;
-    width: 100%;
-    height: 74.9375rem;
-    flex-shrink: 0;
-  }
-  /*Delivering real sutvarkymas*/
-  .ar2-h2 {
-    width: 35.8125rem;
-    height: 6rem;
-    padding-left: 2.7rem;
-    padding-right: 3rem;
-    padding-top: 0.5rem;
-    margin-bottom: 5rem;
-  }
-
-  /*isdestymas stulpleiu*/
-  .ar2-cards-container{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  /*teksto sutvarkymas/plotis*/
-  .ar2-card{
-    width: 35.8125rem;
-    height: 6.9375rem;
-    display: block;
-    flex: 1;
-    min-width: 0; 
-  }
-
-  .ar2-parahraph-style{
-    margin-bottom: 0.9rem;
-  }
-  .ar2-title{
-    padding-top: 0px;
-    margin-top: 0;
-  }
-  .ar2-last-name{
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  /*nuotrauku sutvarkymas*/
-  .ar2-avatar { 
-    margin-top: 1rem;
-  }
-
-}
-@media screen and (max-width: 900px) {
-
-  /*--------------------------------------ARTICLE-1 by migle*/
-
-  .home-article-1 {
-    width: 100%;
-    height: 44.8rem;
-    overflow: hidden;
-    /* border: solid 1px red; */
-  }
-
-  /*Build & manage tekstas*/
-  .ar1-left-h2 {
-    width: 27.8125rem;
-    padding-top: 8.5rem;
-    padding-bottom: 4rem;
-    margin-left: 6.12rem;
-  }
-
-  .h2-font { /* h2 font size */
-    font-size: 2rem !important;
-    font-weight: 700 !important;
-    line-height: 2rem !important; /* 100% */
-  }
-
-  .ar1-left-h2::before{
-    width: 3.125rem;
-    height: 0.25rem;
-    flex-shrink: 0;
-    content: "";
-    position: absolute;
-    top: 6.25rem; /* atstumas i virsu nuo "build" zodzio*/
-    left: 0;
-  }
-  
-  /*dekoracija virsuje*/
-  .ar1-background-decoration {
-    position: absolute;
-    top: 0;
-    right: -3rem;
-    width: 12.5rem;
-    height: 15.25rem;
-    flex-shrink: 0;
-  }
-
-  /*right- divai*/
-
-  .ar1-right-container{
-    margin-top: 4rem;
-    margin-bottom: 0;
-    margin-left: 4rem;
-    margin-right: 0;
-    padding-top: 0;
-  }
-
-  .text-content {
-    margin-bottom: 1.9rem;
-  }
-
-  .ar1-right-div{
-    margin-left: 0;
-    padding-left: 4px;
-    padding-top: 0;
-    width: 36rem;
-
-  }
-
-  .ar1-parahraph-style{
-    width: 29.875rem;
-  }
-
-    /*--------------------------------------ARTICLE-2 by migle*/
-
-  .home-article-2 {
-    overflow: hidden;
-    padding-top: 6.1rem;
-    width: 100%;
-    height: 74.9375rem;
-    flex-shrink: 0;
-  }
-  /*Delivering real sutvarkymas*/
-  .ar2-h2 {
-    width: 35.8125rem;
-    height: 6rem;
-    margin-bottom: 1rem;
-    padding-left: 2.7rem;
-    padding-right: 3rem;
-    padding-top: 0.5rem;
-  }
-
-  /*isdestymas stulpleiu*/
-  .ar2-cards-container{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  /*teksto sutvarkymas/plotis*/
-  .ar2-card{
-    width: 35.8125rem;
-    height: 6.9375rem;
-    display: block;
-    flex: 1;
-    min-width: 0; 
-  }
-
-  .ar2-parahraph-style{
-    margin-bottom: 0.9rem;
-  }
-  .ar2-title{
-    padding-top: 0px;
-    margin-top: 0;
-  }
-
-  .ar2-last-name{
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  /*nuotrauku sutvarkymas*/
-  .ar2-avatar { 
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 738px) {
-
-  .home-article-1 {
-    width: 100%;
-    height: 68rem;
-    overflow: hidden;
-  }
-
-  .ar1-background-decoration {
-    width: 12.5rem;
-    height: 15.25rem;
-    flex-shrink: 0;
-    position: absolute;
-    top: 0;
-    right: -3rem;
-  }
-  
-  .ar1-left-h2 {
-    width: 100%;
-    height: 10rem;
-    margin-top: 6.25rem;
-    margin-left: 1.5rem;
-    margin-right: 0;
-    margin-bottom: 4rem;
-    padding: 0;
-    width: 15rem;
-  }
-
-  .ar1-left-h2::before { /*oranzine juostele*/
-    width: 3.125rem;
-    height: 0.25rem;
-    flex-shrink: 0;
-    position: absolute;
-    top: -2.25rem; /* atstumas i virsu nuo "build" zodzio*/
-  }
-
-  .ar1-right-container {
-    width: 100%;
-    height: 43rem;
-    margin-top: 4rem;
-    margin-left: 0;
-    padding: 0;
-    /* border: solid 1px yellow; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .text-content {
-    width: 20.44rem;
-    align-items: center;
-    gap: 0rem;
-  }
-
-  .ar1-parahraph-style {
-    width: 20.4rem;
-    /* border: solid 1px purple; */
-    color: #FFF;
-  }
-  
-  .ar1-right-div {
-    display: block;
-    width: 20.44rem;
-    /* border: 1px green solid; */
-    text-align: center;
-  }
-
-  .ar1-icon {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  /* ----------------- article 2 for mobile */
-
-  .home-article-2 {
-    width: 100%;
-    height: 88.12rem;
-
-  }
-
-  .ar2-cards-container {
-    margin-top: 3rem;
-  }
-
-  .ar2-h2{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    padding: 0;
-    width: 20.4375rem;
-    height: 8rem;
-  }
-
-  .ar2-card {
-    margin: 0;
-    padding: 0;
-    width: 20.4375rem;
-  }
-}
-
-
-
 a {
   text-decoration: none;
 }
-
 
 .height-200px {
   height: 200px;
@@ -609,7 +299,7 @@ a {
 }
 
 .background-color-F67E7E {
-  background-color: #F67E7E;
+  background-color: #f67e7e;
 }
 
 .overflow-hidden {
@@ -643,16 +333,16 @@ footer {
 }
 
 .container {
-    width: 1110px;
-    height: 100px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 250px;
+  width: 1110px;
+  height: 100px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 250px;
 }
 
 .container2 {
@@ -666,7 +356,7 @@ footer {
 }
 
 .color-012F34 {
-  color: #012F34;
+  color: #012f34;
 }
 
 .font-size-48px {
@@ -694,7 +384,7 @@ footer {
 }
 
 .button2 {
-  border: 2px solid #012F34;
+  border: 2px solid #012f34;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -711,7 +401,7 @@ footer {
 .contact-us2 {
   width: 88px;
   height: 28px;
-  color: #012F34;
+  color: #012f34;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -745,7 +435,7 @@ footer {
 }
 
 .width-49px {
-  width:49px;
+  width: 49px;
 }
 
 .width-51px {
@@ -753,7 +443,7 @@ footer {
 }
 
 .link {
-  color:#FFF;
+  color: #fff;
   height: 28px;
   font-size: 18px;
   font-style: normal;
@@ -808,29 +498,27 @@ main > header > div > section::before {
   width: 50px;
   height: 4px;
   flex-shrink: 0;
-  background-color: #F67E7E;
+  background-color: #f67e7e;
 }
 
-
-footer > section > div  nav > a:hover {
-  cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
-  fill: #FFF;
+footer > section > div nav > a:hover {
+  cursor: url("../images/Pointer\ Copy\ 11.png"), auto;
+  fill: #fff;
   stroke-width: 1px;
   stroke: #000;
   filter: drop-shadow(0px 1px 2px #000);
 }
 
 section > a:hover {
-  cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
-  fill: #FFF;
+  cursor: url("../images/Pointer\ Copy\ 11.png"), auto;
+  fill: #fff;
   stroke-width: 1px;
   stroke: #000;
   filter: drop-shadow(0px 1px 2px #000);
 }
 
-
 .button2 {
-  border: 2px solid #012F34;
+  border: 2px solid #012f34;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -841,13 +529,13 @@ section > a:hover {
 }
 
 .button2:hover {
-  background-color: #012F34;
+  background-color: #012f34;
 }
 
 .contact-us2 {
   width: 88px;
   height: 28px;
-  color: #012F34;
+  color: #012f34;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -855,9 +543,607 @@ section > a:hover {
 }
 
 .contact-us2:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 a:hover {
-    color: #F67E7E;
+  color: #f67e7e;
+}
+
+/* pridetas media q mazesneism ekranams MANO ARTICLE-1 IR 2 DEL GRAZESNIO PERSIRYKIAVIMO. NEBUTINAS */
+@media screen and (max-width: 1240px) {
+  .home-article-1 {
+    width: 100%;
+  }
+
+  .ar1-right-div {
+    justify-content: center;
+  }
+
+  .ar1-left-h2,
+  .ar1-right-container {
+    float: none;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .ar1-left-h2::before {
+    /* juostele prie h2 teksto*/
+    content: "";
+    top: 2.5rem; /* atstumas i virsu nuo "build" zodzio*/
+    left: 0;
+    width: 3.125rem;
+    height: 0.25rem;
+    background-color: var(--light-coral);
+  }
+
+  /* article 2 suspaudimas  */
+  .home-article-2 {
+    overflow: hidden;
+    padding-top: 6.1rem;
+    width: 100%;
+    height: 74.9375rem;
+    flex-shrink: 0;
+  }
+  /*Delivering real sutvarkymas*/
+  .ar2-h2 {
+    width: 35.8125rem;
+    height: 6rem;
+    padding-left: 2.7rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    margin-bottom: 5rem;
+  }
+
+  /*isdestymas stulpleiu*/
+  .ar2-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  /*teksto sutvarkymas/plotis*/
+  .ar2-card {
+    width: 35.8125rem;
+    height: 6.9375rem;
+    display: block;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ar2-parahraph-style {
+    margin-bottom: 0.9rem;
+  }
+  .ar2-title {
+    padding-top: 0px;
+    margin-top: 0;
+  }
+  .ar2-last-name {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  /*nuotrauku sutvarkymas*/
+  .ar2-avatar {
+    margin-top: 1rem;
+  }
+
+    /* article-1 Find the best talent Mantas */
+
+  /* Arical 1 Home page Mantas */
+  .find-the-best-container {
+    width: 738px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  /* Pirmas tekstas*/
+  .finding-the-right {
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+    white-space: normal;
+    overflow: visible;
+    height: auto;
+    min-height: 100px;
+  }
+  /* Artical konteineris */
+  .article-one {
+    font-family: "Livvic", sans-serif;
+    width: 100%;
+    height: 373px;
+    background-color: var(--mg);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic-two {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .find-the-best-talent-parent {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    position: relative;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    color: var(--w);
+    font-family: "Livvic", sans-serif;
+    left: 0;
+    gap: 10px;
+    justify-content: center;
+  }
+  .talent {
+    color: var(--lc);
+  }
+
+  .group {
+    max-width: 100%;
+    width: auto;
+    font-size: 15px;
+    height: auto;
+  }
+  .article-one{
+    height: 487px;
+  }
+  .just-line{
+    display: none;
+  }
+  .pic-one{
+    display: none !important;
+  }
+  .find-the-best-talent-parent{
+    width: 100%;
+    margin-top: 80px;
+  }
+  .article-one .group{
+    position: static;
+    overflow: visible;
+  }
+  .find-the-best-container{
+    color: #FFF;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 87.5% */
+    position: static;
+    width: 100%;
+  }
+  .finding-the-right{
+    font-size: 24px;
+    max-width: 857px;
+    margin-top: 24px;
+    top: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  /*--------------------------------------ARTICLE-1 by migle*/
+
+  .home-article-1 {
+    width: 100%;
+    height: 44.8rem;
+    overflow: hidden;
+    /* border: solid 1px red; */
+  }
+
+  /*Build & manage tekstas*/
+  .ar1-left-h2 {
+    width: 27.8125rem;
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
+    margin-left: 6.12rem;
+  }
+
+  .h2-font {
+    /* h2 font size */
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    line-height: 2rem !important; /* 100% */
+  }
+
+  .ar1-left-h2::before {
+    width: 3.125rem;
+    height: 0.25rem;
+    flex-shrink: 0;
+    content: "";
+    position: absolute;
+    top: 6.25rem; /* atstumas i virsu nuo "build" zodzio*/
+    left: 0;
+  }
+
+  /*dekoracija virsuje*/
+  .ar1-background-decoration {
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    width: 12.5rem;
+    height: 15.25rem;
+    flex-shrink: 0;
+  }
+
+  /*right- divai*/
+
+  .ar1-right-container {
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-left: 4rem;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .text-content {
+    margin-bottom: 1.9rem;
+  }
+
+  .ar1-right-div {
+    margin-left: 0;
+    padding-left: 4px;
+    padding-top: 0;
+    width: 36rem;
+  }
+
+  .ar1-parahraph-style {
+    width: 29.875rem;
+  }
+
+  /*--------------------------------------ARTICLE-2 by migle*/
+
+  .home-article-2 {
+    overflow: hidden;
+    padding-top: 6.1rem;
+    width: 100%;
+    height: 74.9375rem;
+    flex-shrink: 0;
+  }
+  /*Delivering real sutvarkymas*/
+  .ar2-h2 {
+    width: 35.8125rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    padding-left: 2.7rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+  }
+
+  /*isdestymas stulpleiu*/
+  .ar2-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  /*teksto sutvarkymas/plotis*/
+  .ar2-card {
+    width: 35.8125rem;
+    height: 6.9375rem;
+    display: block;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ar2-parahraph-style {
+    margin-bottom: 0.9rem;
+  }
+  .ar2-title {
+    padding-top: 0px;
+    margin-top: 0;
+  }
+
+  .ar2-last-name {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  /*nuotrauku sutvarkymas*/
+  .ar2-avatar {
+    margin-top: 1rem;
+  }
+  /* article-1 Find the best talent Mantas */
+
+  /* Arical 1 Home page Mantas */
+  .find-the-best-container {
+    width: 738px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  /* Pirmas tekstas*/
+  .finding-the-right {
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+    white-space: normal;
+    overflow: visible;
+    height: auto;
+    min-height: 100px;
+  }
+  /* Artical konteineris */
+  .article-one {
+    font-family: "Livvic", sans-serif;
+    width: 100%;
+    height: 373px;
+    background-color: var(--mg);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic-two {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .find-the-best-talent-parent {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    position: relative;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    color: var(--w);
+    font-family: "Livvic", sans-serif;
+    left: 0;
+    gap: 10px;
+    justify-content: center;
+  }
+  .talent {
+    color: var(--lc);
+  }
+
+  .group {
+    max-width: 100%;
+    width: auto;
+    font-size: 15px;
+    height: auto;
+  }
+  .article-one{
+    height: 487px;
+  }
+  .just-line{
+    display: none;
+  }
+  .pic-one{
+    display: none !important;
+  }
+  .find-the-best-talent-parent{
+    width: 100%;
+    margin-top: 80px;
+  }
+  .article-one .group{
+    position: static;
+    overflow: visible;
+  }
+  .find-the-best-container{
+    color: #FFF;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 87.5% */
+    position: static;
+    width: 100%;
+  }
+  .finding-the-right{
+    max-width: 457px;
+    margin-top: 24px;
+    top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-article-1 {
+    width: 100%;
+    height: 68rem;
+    overflow: hidden;
+  }
+
+  .ar1-background-decoration {
+    width: 12.5rem;
+    height: 15.25rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+  }
+
+  .ar1-left-h2 {
+    width: 100%;
+    height: 10rem;
+    margin-top: 6.25rem;
+    margin-left: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 4rem;
+    padding: 0;
+    width: 15rem;
+  }
+
+  .ar1-left-h2::before {
+    /*oranzine juostele*/
+    width: 3.125rem;
+    height: 0.25rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: -2.25rem; /* atstumas i virsu nuo "build" zodzio*/
+  }
+
+  .ar1-right-container {
+    width: 100%;
+    height: 43rem;
+    margin-top: 4rem;
+    margin-left: 0;
+    padding: 0;
+    /* border: solid 1px yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-content {
+    width: 20.44rem;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .ar1-parahraph-style {
+    width: 20.4rem;
+    /* border: solid 1px purple; */
+    color: #fff;
+  }
+
+  .ar1-right-div {
+    display: block;
+    width: 20.44rem;
+    /* border: 1px green solid; */
+    text-align: center;
+  }
+
+  .ar1-icon {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  /* ----------------- article 2 for mobile */
+
+  .home-article-2 {
+    width: 100%;
+    height: 88.12rem;
+  }
+
+  .ar2-cards-container {
+    margin-top: 3rem;
+  }
+
+  .ar2-h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    width: 20.4375rem;
+    height: 8rem;
+  }
+
+  .ar2-card {
+    margin: 0;
+    padding: 0;
+    width: 20.4375rem;
+  }
+
+  /* Arical 1 Home page Mantas */
+  .find-the-best-container {
+    width: 738px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  /* Pirmas tekstas*/
+  .finding-the-right {
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+    white-space: normal;
+    overflow: visible;
+    height: auto;
+    min-height: 100px;
+  }
+  /* Artical konteineris */
+  .article-one {
+    font-family: "Livvic", sans-serif;
+    width: 100%;
+    height: 373px;
+    background-color: var(--mg);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pic-two {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .find-the-best-talent-parent {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    position: relative;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    color: var(--w);
+    font-family: "Livvic", sans-serif;
+    left: 0;
+    gap: 10px;
+    justify-content: center;
+  }
+  .talent {
+    color: var(--lc);
+  }
+
+  .group {
+    max-width: 100%;
+    width: auto;
+    font-size: 15px;
+    height: auto;
+  }
+  .article-one{
+    height: 487px;
+  }
+  .just-line{
+    display: none;
+  }
+  .pic-one{
+    display: none !important;
+  }
+  .find-the-best-talent-parent{
+    width: 100%;
+    margin-top: 80px;
+  }
+  .article-one .group{
+    position: static;
+    overflow: visible;
+  }
+  .find-the-best-container{
+    color: #FFF;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+    position: static;
+    width: 100%;
+  }
+  .finding-the-right{
+    max-width: 327px;
+    margin-top: 24px;
+    top: 0;
+  }
 }
