@@ -6,6 +6,10 @@
     color: #FFF;
 }
 
+body {
+    overflow-x: hidden; /* Paslepia horizontalią slinktį */
+}
+
 body > main {
     width: 100%;
 }
@@ -38,7 +42,6 @@ a {
     display: flex;
     gap: 30px;
 }
-
 
 .header-section {
     display: flex;
@@ -78,7 +81,7 @@ a {
 }
 
 .link {
-    color:#FFF;
+    color: #FFF;
     height: 28px;
     font-size: 18px;
     font-style: normal;
@@ -184,11 +187,9 @@ a {
     position: relative;
 }
 
-
 .justify-content-center {
     justify-content: center;
 }
-
 
 .display-flex {
     display: flex;
@@ -209,9 +210,6 @@ a {
 .align-self--flex-end {
     align-self: flex-end;
 }
-
-
-
 
 .font-style-normal {
     font-style: normal;
@@ -241,11 +239,8 @@ a {
     font-weight: 700;
 }
 
-
-
-
 .width-49px {
-    width:49px;
+    width: 49px;
 }
 
 .width-51px {
@@ -288,8 +283,6 @@ a {
     width: 730px;
 }
 
-
-
 .height-24px {
     height: 24px;
 }
@@ -330,9 +323,6 @@ a {
     height: 517px;
 }
 
-
-
-
 .line-height-25px {
     line-height: 25px;
 }
@@ -348,10 +338,6 @@ a {
 .line-height-100px {
     line-height: 100px;
 }
-
-
-
-
 
 .text-align-right {
     text-align: right;
@@ -385,7 +371,6 @@ a {
     gap: 40px;
 }
 
-
 .overflow-hidden {
     overflow: hidden;
 }
@@ -393,7 +378,6 @@ a {
 .opct-06 {
     opacity: 0.6;
 }
-
 
 main > header > div > section::before {
     content: "";
@@ -412,7 +396,7 @@ main > header > nav > a:hover {
     filter: drop-shadow(0px 1px 2px #000);
 }
 
-main > footer > section > div  nav > a:hover {
+main > footer > section > div nav > a:hover {
     cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
     fill: #FFF;
     stroke-width: 1px;
@@ -430,10 +414,9 @@ main > section > a:hover {
 
 a:hover {
     color: #F67E7E;
-    }
+}
 
-/* our clients main stiles */
-
+/* Our Clients section */
 .ourClients {
     position: relative;
     background-color: hsl(186, 96%, 10%);
@@ -441,7 +424,6 @@ a:hover {
     font-family: "Livvic", serif;
 }
 
-/* logo size and position */
 .ourClients .flex-container {
     padding: 140px 160px;
     display: flex;
@@ -450,12 +432,11 @@ a:hover {
     text-align: center;
     width: 100%;
 }
-/* our clients size and position */
+
 .ourClients .logo {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -466,17 +447,14 @@ a:hover {
     width: 100%;
 }
 
-/* clients main title */
 .ourClients .flex-container h2 {
     width: 100%;
     font-size: 48px;
     font-weight: bold;
     line-height: 48px;
-
     margin-bottom: 74px;
 }
 
-/* clients img position and size */
 .ourClients .flex-container ul {
     display: flex;
     align-items: center;
@@ -484,6 +462,7 @@ a:hover {
     list-style: none;
     width: 1110px;
     height: 45px;
+    gap: 40px;
 }
 
 .ourClients .flex-container li {
@@ -495,5 +474,46 @@ a:hover {
     max-height: 45px;
 }
 
+/* Media Queries for Tablet */
+@media (max-width: 1440px) {
+    .ourClients .flex-container {
+        padding: 100px 80px;
+    }
 
+    .ourClients .flex-container h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 
+    .ourClients .flex-container ul {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .ourClients .flex-container li img {
+        width: 60%;
+        max-height: 30px;
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .ourClients .flex-container {
+        padding: 50px 20px;
+    }
+
+    .ourClients .flex-container h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .ourClients .flex-container ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ourClients .flex-container li img {
+        width: 50%;
+        max-height: 20px;
+    }
+}
