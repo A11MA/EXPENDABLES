@@ -1,62 +1,26 @@
 * {
     font-family: "Livvic", serif;
     color: #FFF;
-}
-
-main > footer > section > div nav > a:hover {
-    cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
-    fill: #FFF;
-    stroke-width: 1px;
-    stroke: #000;
-    filter: drop-shadow(0px 1px 2px #000);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
 }
 
 a {text-decoration: none;}
-
-.height-200px {
-    height: 200px;
-  }
   
   .flex-shrink-0 {
     flex-shrink: 0;
   }
   
-  .background-color-F67E7E {
-    background-color: #F67E7E;
-  }
-  
-  .overflow-hidden {
-    overflow: hidden;
-  }
-  
-  .width-244px {
-    width: 244px;
-  }
-  
-  .section-red {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 40px;
-    position: relative;
-  }
   
   footer {
     padding-top: 40px;
   }
   
-  .position-absolute {
-    position: absolute;
-  }
-  
-  .position-design-element {
-    top: 15px;
-    left: 500px;
-  }
-  
   .container {
-      width: 1110px;
+      width: 100%;
+      max-width: 1110px;
       height: 100px;
       flex-shrink: 0;
       display: flex;
@@ -74,66 +38,14 @@ a {text-decoration: none;}
     padding-right: 100px;
   }
   
-  .position-absolute {
-    position: absolute;
-  }
   
-  .color-012F34 {
-    color: #012F34;
-  }
-  
-  .font-size-48px {
-    font-size: 48px;
-  }
-  
-  .font-style-normal {
-    font-style: normal;
-  }
   
   .font-weight-600 {
     font-weight: 600;
   }
   
-  .font-weight-700 {
-    font-weight: 700;
-  }
   
-  .line-height-25px {
-    line-height: 25px;
-  }
-  
-  .line-height-48px {
-    line-height: 48px;
-  }
-  
-  .button2 {
-    border: 2px solid #012F34;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 153px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 24px;
-  }
-  
-  .position-button2 {
-    margin-left: 290px;
-  }
-  
-  .contact-us2 {
-    width: 88px;
-    height: 28px;
-    color: #012F34;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-  }
-  
-  .height-196px {
-    height: 196px;
-  }
+
   
   .background-color-002529 {
     background-color: #002529;
@@ -143,27 +55,13 @@ a {text-decoration: none;}
     flex-wrap: wrap;
   }
   
-  .width-160px {
-    width: 160px;
-  }
-  
-  .height-40px {
-    height: 40px;
-  }
   
   .nav-2 {
-    margin-top: 25px;
+    padding-top: 25px;
     display: flex;
     gap: 30px;
   }
   
-  .width-49px {
-    width:49px;
-  }
-  
-  .width-51px {
-    width: 51px;
-  }
   
   .link {
     color:#FFF;
@@ -186,9 +84,34 @@ a {text-decoration: none;}
     align-self: flex-end;
   }
   
+  .position-icons {
+    margin-left: 150px;
+    margin-bottom: 45px;
+  }
+
+  
+
+  .width-49px {
+    width:49px;
+  }
+  
+  .width-51px {
+    width: 51px;
+  }
+
   .width-104px {
     width: 104px;
   }
+
+  .width-160px {
+    width: 160px;
+  }
+
+  .width-255px {
+    width: 255px;
+  }
+
+
   
   .height-24px {
     height: 24px;
@@ -198,15 +121,18 @@ a {text-decoration: none;}
     height: 25px;
   }
   
-  .position-icons {
-    margin-left: 150px;
-    margin-bottom: 45px;
+  .height-40px {
+    height: 40px;
   }
-  
-  .width-255px {
-    width: 255px;
+
+  .height-196px {
+    height: 196px;
   }
-  
+
+  .line-height-25px {
+    line-height: 25px;
+  }
+
   .text-align-right {
     text-align: right;
   }
@@ -217,4 +143,9 @@ a {text-decoration: none;}
 
   a:hover {
     color: #F67E7E;
-    }
+    cursor: url('../images/Pointer\ Copy\ 11.png'), auto;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 1px 2px #000);
+   }
