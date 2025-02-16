@@ -82,6 +82,7 @@ p {
 /* Sekcijos stilius */
 section {
     height: 1002px;
+    width: 100%;
     
     /* Fiksuotas sekcijos aukštis */
 }
