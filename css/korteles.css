@@ -1,190 +1,491 @@
+ /* Pagrindiniai kintamieji (spalvos) */
+ :root {
+    --midnight-green: #014E56;
+    /* Tamsiai žalia spalva */
+    --light-coral: #F67E7E;
+    /* Šviesiai koralinė spalva */
+    --white: #FFFFFF;
+    /* Balta spalva */
+    --rapture-blue: #79C8C7;
+    /* Šviesiai mėlyna spalva */
+    --police-blue: #2C6269;
+    /* Mėlyna spalva */
+    --deep-jungle-green: #004047;
+    /* Tamsiai žalia spalva */
+    --sacramento-state-green: #012F34;
+    /* Tamsiai žalia spalva */
+    --dark-green: #002529;
+    /* Labai tamsiai žalia spalva */
+}
+
+/* Pagrindiniai stiliai */
 body {
     font-family: 'Livvic', sans-serif;
+    /* Šriftas */
+    font-weight: 400;
+    /* Paprastas šrifto stilius */
+    font-size: 15px;
+    /* Pagrindinio teksto dydis */
+    line-height: 25px;
+    /* Tarpai tarp eilučių */
+    color: var(--midnight-green);
+    /* Teksto spalva */
 }
-section{
-   height: 1002px;
+
+/* Antraščių stiliai */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 700;
+    /* Paryškintas šriftas */
 }
+
+h1 {
+    font-size: 100px;
+    /* Didelis šrifto dydis */
+    line-height: 100px;
+    /* Eilučių aukštis */
+    color: var(--white);
+    /* Balta spalva */
+}
+
+h2 {
+    font-size: 64px;
+    /* Vidutinis šrifto dydis */
+    line-height: 56px;
+    /* Eilučių aukštis */
+    color: var(--rapture-blue);
+    /* Šviesiai mėlyna spalva */
+}
+
+h3 {
+    font-size: 48px;
+    /* Vidutinis šrifto dydis */
+    line-height: 48px;
+    /* Eilučių aukštis */
+   
+}
+
+/* Pagrindinio teksto stilius */
+p {
+    font-size: 15px;
+    /* Teksto dydis */
+    line-height: 25px;
+    /* Tarpai tarp eilučių */
+ 
+}
+
+/* Sekcijos stilius */
+section {
+    height: 1002px;
+    
+    /* Fiksuotas sekcijos aukštis */
+}
+
+/* Direktorių sekcija */
 .directors-section {
+    position: relative;
+    /* Svarbu pozicionavimui */
     text-align: center;
+    /* Teksto centravimas */
     padding: 120px 20px;
-    background-color: #004047;
+    /* Atitraukimai */
+    background-color: var(--deep-jungle-green);
+    /* Fono spalva */
+    color: var(--white);
+    /* Teksto spalva */
 }
 
 .directors-section h1 {
     font-size: 48px;
+    /* Antraštės dydis */
     margin-bottom: 100px;
-    color: #FFF;
+    /* Atitraukimas nuo apačios */
+    color: var(--white);
+    /* Balta spalva */
     font-weight: 700;
-
+    /* Paryškintas šriftas */
 }
 
+/* Tinklelis su direktorių kortelėmis */
 .directors-grid {
     display: grid;
+    /* Naudojamas grid layout */
     grid-template-columns: repeat(3, 1fr);
-    gap: 150px 40px;
-    max-width: 1200px;
+    /* 3 stulpeliai */
+    gap: 76px 10px;
+    /* Tarpai tarp kortelių */
+    max-width: 1440px;
+    /* Maksimalus plotis */
     margin: 0 auto;
+    /* Centravimas */
 }
 
+/* Kortelės stilius */
 .director-card {
-width: 350px;
-height: 253px;
-position: relative;
-perspective: 1000px;
+    width: 350px;
+    /* Kortelės plotis */
+    height: 253px;
+    /* Kortelės aukštis */
+    position: relative;
+    /* Svarbu pozicionavimui */
+    perspective: 1000px;
+    /* 3D efektas */
+    will-change: transform;
+    /* Optimizacija animacijai */
 }
 
-@media (max-width: 1024px) { 
-section {
-height: auto;
-padding: 60px 20px;
-
-}
-
-.directors-grid {
-grid-template-columns: repeat(2, 1fr);
-gap: 130px 40px;          
-max-width: 800px; 
-padding: 0 40px;
-}
-
-.director-card {
-width: 100%;
-max-width: 327px;
-margin: 0 auto;
-perspective: 1000px;
-}
-
-@media (max-width: 768px) { 
-.directors-grid {
-grid-template-columns: 1fr;
-max-width: 500px;
-gap: 90px; 
-padding: 0 15px;
-}
-
-.directors-section h1 {
-font-size: 32px;
-margin-bottom: 100px;
-}
-
-.director-card {
-max-width: 327px;
-margin-bottom: 20px;
-}
-}
-
-.card-front, .card-back {
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-backface-visibility: hidden;
-transition: transform 0.6s;
-padding: 20px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+/* Priekinė ir užpakalinė kortelės pusės */
+.card-front,
+.card-back {
+    width: 100%;
+    /* Užima visą plotį */
+    height: 100%;
+    /* Užima visą aukštį */
+    position: absolute;
+    /* Absoliutus pozicionavimas */
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    /* Paslepia užpakalinę pusę */
+    transition: transform 0.6s;
+    /* Animacija */
+    padding: 20px;
+    /* Atitraukimai */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Šešėlis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Elementai išdėstomi stulpelyje */
 }
 
 .card-front {
-background: #012F34;
+    background-color: var(--sacramento-state-green);
+    /* Fono spalva */
 }
 
 .card-back {
-background: #002529;
-transform: rotateY(180deg);
-color: #FFF;
+    background-color: var(--dark-green);
+    /* Fono spalva */
+    color: var(--white);
+    /* Teksto spalva */
+    transform: rotateY(180deg);
+    /* Pasukta užpakalinė pusė */
 }
 
+/* Direktoriaus nuotrauka */
 .director-image {
     width: 96px;
+    /* Nuotraukos plotis */
     height: 96px;
+    /* Nuotraukos aukštis */
     border-radius: 50%;
+    /* Apvali forma */
     border: 2px solid #C4FFFE;
+    /* Rėmelis */
     margin-bottom: 15px;
+    /* Atitraukimas nuo apačios */
     object-fit: cover;
+    /* Nuotrauka užpildo visą plotą */
 }
 
+/* Direktoriaus vardas */
 .director-card h3 {
-    color: #79C8C7;
+    color: var(--rapture-blue);
+    /* Teksto spalva */
     text-align: center;
+    /* Teksto centravimas */
     font-size: 18px;
+    /* Šrifto dydis */
     font-weight: 700;
+    /* Paryškintas šriftas */
     margin-bottom: 0;
-}
-.card-back h3{
-    margin-bottom: 0;
-}
-.card-front .role {
-    color: #FFF;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 56px;
-    margin-top: 4px;
+    /* Atitraukimas nuo apačios */
 }
 
+/* Pareigos */
+.card-front .role {
+    color: var(--white);
+    /* Balta spalva */
+    text-align: center;
+    /* Teksto centravimas */
+    font-size: 15px;
+    /* Šrifto dydis */
+    font-weight: 500;
+    /* Vidutinis šrifto stilius */
+    padding: 0 24px 56px;
+    /* Atitraukimai */
+    margin-top: 4px;
+    /* Atitraukimas nuo viršaus */
+}
+
+/* Aprašymas užpakalinėje pusėje */
 .card-back .bio {
     font-size: 0.9rem;
-    color: #fff;
+    /* Šrifto dydis */
+    color: var(--white);
+    /* Balta spalva */
     margin-bottom: 20px;
+    /* Atitraukimas nuo apačios */
 }
 
+/* Mygtukas kortelės apvertimui */
 .flip-button {
-position: absolute;
-bottom: -28px; 
-left: 50%;
-transform: translate(-50%, 0);
-background: none;
-border: none;
-padding: 0;
-cursor: pointer;
-z-index: 2;
-
+    position: absolute;
+    /* Absoliutus pozicionavimas */
+    bottom: -28px;
+    /* Atitraukimas nuo apačios */
+    left: 50%;
+    /* Centravimas horizontaliai */
+    transform: translate(-50%, 0);
+    /* Centravimas */
+    background: none;
+    /* Nėra fono */
+    border: none;
+    /* Nėra rėmelio */
+    padding: 0;
+    /* Nėra atitraukimų */
+    cursor: pointer;
+    /* Rodyklė, kai užvedama pelė */
+    z-index: 2;
+    /* Užtikrina, kad mygtukas būtų viršuje */
 }
 
-.card-back .flip-button {
-bottom: -28px;
-background: transparent;
-}
-.card-front, .card-back {
-padding-bottom: 40px; 
-}
-.card-front .flip-button circle {
-fill: #F67E7E; 
-}
-.card-back .flip-button circle {
-fill: #79C8C7;
-}
-
-
-.director-card {
-overflow: visible;
+.flip-button:hover {
+    opacity: 0.8;
+    /* Efektas užvedus pelę */
 }
 
 .flip-button svg {
     width: 56px;
-height: 56px;
-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    /* Mygtuko plotis */
+    height: 56px;
+    /* Mygtuko aukštis */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    /* Šešėlis */
 }
 
-.flip-button .flip-icon {
-    fill: #F67E7E;
+.card-front .flip-button circle {
+    fill: var(--light-coral);
+    /* Mygtuko spalva priekinėje pusėje */
 }
 
-.flip-button.flip-back .flip-icon {
-    fill: #79C8C7;
+.card-back .flip-button circle {
+    fill: var(--rapture-blue);
+    /* Mygtuko spalva užpakalinėje pusėje */
 }
 
+/* Animacija apvertus kortelę */
 .director-card.flip .card-front {
     transform: rotateY(180deg);
+    /* Pasukta priekinė pusė */
 }
 
 .director-card.flip .card-back {
     transform: rotateY(0deg);
+    /* Pasukta užpakalinė pusė */
+}
+
+/* Dekoracinis elementas kairėje */
+.about_left {
+    position: absolute;
+    /* Absoliutus pozicionavimas */
+    top: 0;
+    /* Atitraukimas nuo viršaus */
+    left: 0;
+    /* Atitraukimas nuo kairės */
+}
+
+/* Dekoracinis elementas dešinėje */
+.about_right {
+    position: absolute;
+    /* Absoliutus pozicionavimas */
+    bottom: 0;
+    /* Atitraukimas nuo apačios */
+    right: 0;
+    /* Atitraukimas nuo dešinės */
+    z-index: 1;
+    /* Užtikrina, kad elementas būtų po pagrindiniu turiniu */
+}
+
+.about_right img {
+    width: 200px;
+    /* Vaizdo plotis */
+    height: auto;
+    /* Išlaikomos proporcijos */
+    transform: translateX(64px);
+    /* Pastūmimas į dešinę */
+}
+
+/* Adaptacija planšetiniams įrenginiams (1024px ir mažiau) */
+@media (max-width: 1024px) {
+    section {
+        height: auto;
+        /* Aukštis pritaikomas pagal turinį */
+        padding: 60px 20px;
+        /* Atitraukimai */
+    }
+
+    .directors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 stulpeliai */
+        gap: 80px 30px;
+        /* Tarpai tarp kortelių */
+        max-width: 800px;
+        /* Maksimalus plotis */
+        padding: 0 40px;
+        /* Atitraukimai iš šonų */
+    }
+
+    .director-card {
+        width: 100%;
+        /* Užima visą plotį */
+        max-width: 327px;
+        /* Maksimalus plotis */
+        margin: 0 auto;
+        /* Centravimas */
+    }
+}
+
+/* Adaptacija mobiliems įrenginiams (768px ir mažiau) */
+@media (max-width: 768px) {
+    .directors-grid {
+        grid-template-columns: 1fr;
+        /* 1 stulpelis */
+        max-width: 500px;
+        /* Maksimalus plotis */
+        gap: 60px;
+        /* Tarpai tarp kortelių */
+        padding: 0 15px;
+        /* Atitraukimai iš šonų */
+    }
+
+    .directors-section h1 {
+        font-size: 32px;
+        /* Sumažintas šrifto dydis */
+        margin-bottom: 80px;
+        /* Atitraukimas nuo apačios */
+    }
+
+    .director-card {
+        max-width: 327px;
+        /* Maksimalus plotis */
+        margin-bottom: 20px;
+        /* Atitraukimas nuo apačios */
+    }
+}
+
+/* Socialinės ikonos užpakalinėje pusėje */
+.card-back .social-icon {
+    margin-top: 20px;
+    /* Atitraukimas nuo viršaus */
+    text-align: center;
+    /* Centravimas */
+}
+
+.card-back .social-icon svg {
+    width: 60px;
+    /* SVG plotis */
+    height: 20px;
+    /* SVG aukštis */
+}
+
+.social-icon svg path {
+    transition: fill 0.3s ease;
+    /* Spalvos keitimo animacija */
+}
+
+.social-icon:hover svg path {
+    fill: var(--light-coral);
+    /* Spalva užvedus pelę */
+}
+
+/* our klientai */
+
+@media (max-width: 1024px) {
+    .ourClients {
+        height: 308px;
+    }
+  
+    .ourClients .flex-container ul {
+        gap: 30px;
+    }
+  
+    .ourClients .flex-container li img {
+        width: 103px;
+        height: 17px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ourClients {
+        height: 632px;
+    }
+  
+    .ourClients .flex-container ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+  
+    .ourClients .flex-container li img {
+        width: 147px;
+        height: 24.2px;
+    }
+  }
+  
+  /* Bendras konteineris */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Klientų logotipų konteineris */
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Vienas klientas */
+.client img {
+  width: 165px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.client img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsyvumas */
+@media (max-width: 1024px) {
+  .client img {
+    width: 103px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .client img {
+    width: 147px;
+    height: 24.2px;
+  }
 }
